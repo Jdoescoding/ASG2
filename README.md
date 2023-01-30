@@ -21,7 +21,10 @@
 </ol>
 <h2>Testing</h2>
 <h2>References</h2>
-LottieFiles: Download Free lightweight animations for website & apps. (n.d.). https://lottiefiles.com/search?q=loading&category=animations
-HTML DOM Document createAttribute() Method. (n.d.). https://www.w3schools.com/JSREF/met_document_createattribute.asp
-Hadzhiev, B. (n.d.). Set multiple Attributes on an Element using JavaScript | bobbyhadz. Blog - Bobby Hadz. https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element
+<ul>
+<li>LottieFiles: Download Free lightweight animations for website & apps. (n.d.). https://lottiefiles.com/search?q=loading&category=animations</li>
 
+<li>HTML DOM Document createAttribute() Method. (n.d.). https://www.w3schools.com/JSREF/met_document_createattribute.asp</li>
+<li>Hadzhiev, B. (n.d.). Set multiple Attributes on an Element using JavaScript | bobbyhadz. Blog - Bobby Hadz. https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element</li>
+
+</ul>
