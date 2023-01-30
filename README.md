@@ -9,12 +9,16 @@
 <h2>Features</h2>
 <h2>Technologies used</h2>
 <ol>
+<li>restdb.io</li>
+<h4>The assignment uses restdb.io as our website's API.</h4>
+<h4>Restdb.Io, T. T. A. (n.d.). Simple online database with NoSQL, automatic REST API, low code javascript hooks, and dynamic web content. Supports MongoDB. restdb.io. https://restdb.io/</h4>
 <li>JQuery</li>
 <h4>The assignment uses JQuery to simplify Javascript code.</h4>
 <h4>JS Foundation - js.foundation. (n.d.). jQuery. https://jquery.com/</h4>
-<li>LottieFiles<li>
+<li>LottieFiles</li>
 <h4>The assignment uses LottieFiles for animations in our website.</h4>
 <h4>LottieFiles. (n.d.). LottieFiles: Download Free lightweight animations for website & apps. https://lottiefiles.com/</h4>
+</ol>
 <h2>Testing</h2>
 <h2>References</h2>
 LottieFiles: Download Free lightweight animations for website & apps. (n.d.). https://lottiefiles.com/search?q=loading&category=animations
