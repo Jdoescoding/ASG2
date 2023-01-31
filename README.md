@@ -21,7 +21,8 @@
 </ol>
 <h2>Testing</h2>
 <h2>References</h2>
-LottieFiles: Download Free lightweight animations for website & apps. (n.d.). https://lottiefiles.com/search?q=loading&category=animations
-HTML DOM Document createAttribute() Method. (n.d.). https://www.w3schools.com/JSREF/met_document_createattribute.asp
-Hadzhiev, B. (n.d.). Set multiple Attributes on an Element using JavaScript | bobbyhadz. Blog - Bobby Hadz. https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element
-
+<h4>LottieFiles: Download Free lightweight animations for website & apps. (n.d.). https://lottiefiles.com/search?q=loading&category=animations</h4>
+<h4>HTML DOM Document createAttribute() Method. (n.d.). https://www.w3schools.com/JSREF/met_document_createattribute.asp</h4>
+<h4>Hadzhiev, B. (n.d.). Set multiple Attributes on an Element using JavaScript | bobbyhadz. Blog - Bobby Hadz. https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element</h4>
+<h4>Flexbox Froggy. (n.d.). A Game for Learning CSS Flexbox. https://flexboxfroggy.com/</h4>
+<h4>Free APA Citation Generator | With APA Format Guide. (2022, December 5). Scribbr. https://www.scribbr.com/citation/generator/apa/</h4>
