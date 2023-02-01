@@ -26,3 +26,5 @@
 <h4>Hadzhiev, B. (n.d.). Set multiple Attributes on an Element using JavaScript | bobbyhadz. Blog - Bobby Hadz. https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element</h4>
 <h4>Flexbox Froggy. (n.d.). A Game for Learning CSS Flexbox. https://flexboxfroggy.com/</h4>
 <h4>Free APA Citation Generator | With APA Format Guide. (2022, December 5). Scribbr. https://www.scribbr.com/citation/generator/apa/</h4>
+<h4>How To Use Media Queries in JavaScript. (n.d.). https://www.w3schools.com/howto/howto_js_media_queries.asp</h4>
+<h4>Maier Jr., B. (n.d.). 147 Colors Grid - CSS Color Names. 147 Colors. https://147colors.com/</h4>
