@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<div style="color:blue;">
-    <h1 class="title">Excelducate</h1>
-    <h7 class="subtitle">Where learning is fun!</h7>
-</div>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <h3>Welcome!</h3>
- <h5>Through the use of fun quizzes and games, we will make learning very fun and interesting!</h5>
- <p>We hope that you have a fun time!</p>
- <h1>Username: </h1>
- <input type="text" class="username" placeholder="Username">
- <h1>Password: </h1>
- <input type="text" class="password" placeholder="Password">
+ <header class="container">
+   <h1 class="title">Welcome Back!</h1>
+ </header>
+ <form method="POST">
+   <label for="username">
+      <h1 class="username">Username: </h1>
+   </label>
+   <input type="username" class="un" width="50px" placeholder="Username" required>
+   <label for="password">
+      <h1 class="password">Password: </h1>
+   </label>
+   <input type="password" class="pw" width="50px" placeholder="Password" required>
+   <div>
+      <input type="Submit" class="submit">
+   </div>
+ </form>
+ <div>
+    Forgot password? Click <a href="resetpw.html">here</a> to reset
+ </div>
+ <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
