@@ -18,6 +18,9 @@
 <li>LottieFiles</li>
 <h4>The assignment uses LottieFiles for animations in our website.</h4>
 <h4>LottieFiles. (n.d.). LottieFiles: Download Free lightweight animations for website & apps. https://lottiefiles.com/</h4>
+<li>Google Fonts</li>
+<h4>I used google fonts to find fonts for this website</h4>
+<h4>https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap</h4>
 </ol>
 <h2>Testing</h2>
 <h2>References</h2>
@@ -26,3 +29,5 @@
 <h4>Hadzhiev, B. (n.d.). Set multiple Attributes on an Element using JavaScript | bobbyhadz. Blog - Bobby Hadz. https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element</h4>
 <h4>Flexbox Froggy. (n.d.). A Game for Learning CSS Flexbox. https://flexboxfroggy.com/</h4>
 <h4>Free APA Citation Generator | With APA Format Guide. (2022, December 5). Scribbr. https://www.scribbr.com/citation/generator/apa/</h4>
+<h4>Adobe Marketo Engage</h4>
+<h4>https://nation.marketo.com/t5/knowledgebase/how-to-move-the-form-button-up-or-down-using-css/ta-p/249334</h4>
