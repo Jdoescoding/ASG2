@@ -33,3 +33,6 @@
 <h4>https://nation.marketo.com/t5/knowledgebase/how-to-move-the-form-button-up-or-down-using-css/ta-p/249334</h4>
 <h4>The school notes</h4>
 <h4>https://replit.com/@Jian_Ting_Donov/simple-restDB#script.js</h4>
+<h4>https://replit.com/@malcolmyam/wk07-activity-materials#js/focus-blur.js</h4>
+<h4>https://replit.com/@malcolmyam/wk07-sample-username-check#script.js</h4>
+

@@ -1,5 +1,8 @@
 $(document).ready(function(){
+  let un = document.getElementsByClassName("un").value;
+  let pw = document.getElementsByClassName("pw").value;
   $(".submit").on("click",function(e){
+    e.PreventDefault();
     let settings = {
       "async": true,
       "crossDomain": true,
@@ -12,7 +15,24 @@ $(document).ready(function(){
       }
     }
     $.ajax(settings).done(function (response) {
-      console.log(response);
+      for(i = 0; i < response.length; i++)
+      {
+        if(un !== response[i].student_name)
+        {
+          let message = "This user does not exist!";
+          document.getElementsByClassName("message").innerText = message;
+        }
+        else if (un == response[i].student_name && pw != response[i].student_password)
+        {
+          let message = "Your password is wrong!";
+          document.getElementsByClassName("message").innerText = message;
+        }
+        else
+        {
+          let message = " ";
+          document.getElementsByClassName("message").innerText = message;
+        }
+      }
     });
   }
   )
