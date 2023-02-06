@@ -1,9 +1,9 @@
 .title{
-    color:rgb(237, 237, 30);
+    color:rgb(24, 184, 216);
     display: flex;
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
-    font-weight: 15px;
+    font-weight: 20px;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -12,7 +12,7 @@ body{
     font-size: 100px;
 }
 .username{
-    color:rgb(237, 237, 30);
+    color:rgb(163, 244, 0);
     width:500px;
     height:30px;
     border-width: 1px;
@@ -25,7 +25,10 @@ body{
     border-width:1px;
 }
 .password{
-    color:rgb(237, 237, 30);
+    color:rgb(163, 244, 0);
+    width:500px;
+    height:30px;
+    border-width: 1px;
 }
 .un{
     border-radius: 10px;
