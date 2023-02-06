@@ -1,0 +1,27 @@
+.subtitle {
+    color: rgb(186, 57, 222);
+    font-family: 'Oxygen', sans-serif;
+    ;
+}
+
+.title {
+    color: rgb(163, 64, 255);
+    font-family: 'Oxygen', sans-serif;
+}
+
+body {
+    background-color: rgb(214, 255, 255);
+    font-family: 'Oxygen', sans-serif;
+}
+
+.class {
+    font-size: 100px;
+}
+
+.username {
+    border-radius: 10px;
+}
+
+.password {
+    border-radius: 10px;
+}

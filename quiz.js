@@ -124,7 +124,7 @@ $(document).ready(function () {
     }
     $.ajax(settings).done(function (response) {
         for (n = 0; n, response.length; n++) {
-            if (response[n].student_username == "") {
+            if (response[n].assigned_student == "") {
                 topic.append(response[n].Quiz_Topics)
             }
         }
@@ -150,7 +150,7 @@ $(document).ready(function () {
     $.ajax(settings).done(function (response) {
         for (n = 0; n, response.length; n++) {
             console.log(response[n].student_username)
-            if (response[n].student_username == "") {
+            if (response[n].assigned_student == "") {
                 let quiz = document.createElement("p")
                 quiz.setAttribute("id", "quiz")
                 quizzes.append(quiz)
