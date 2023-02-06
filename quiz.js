@@ -166,6 +166,7 @@ $(document).ready(function () {
                 quiz_topic.append("Topic: " + response[n].Quiz_Topics)
                 quiz.append(quiz_topic)
             }
+
         }
     });
 })
