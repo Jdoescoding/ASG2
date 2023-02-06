@@ -115,7 +115,7 @@ $(document).ready(function () {
     $("#topics").attr({ style: 'padding:15px;margin:10px' })
     let topic = document.createElement("p")
     topic.setAttribute("id", "topicfound")
-    /*var settings = {
+    var settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
@@ -133,7 +133,6 @@ $(document).ready(function () {
             }
         }
     })
-    */
     choosetypes.append(topic)
     $("#topicfound").attr({ style: 'background-color:orange;margin:25px' })
     let searchtopictitle = document.createElement("p")
@@ -161,7 +160,7 @@ $(document).ready(function () {
     document.body.append(quizzes)
     $("#quizzes").attr({ style: 'display:flex;background-color:orange;flex-wrap:wrap' })
     $("#searchbutton").attr({ style: 'background-color:lightblue;padding:20px' })
-    /*var settings = {
+    var settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
@@ -236,6 +235,6 @@ $(document).ready(function () {
             }
         });
 
-    })*/
+    })
 
 })

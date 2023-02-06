@@ -1,21 +1,27 @@
-.subtitle{
-    color:rgb(186, 57, 222);
-    font-family: 'Oxygen', sans-serif;;
+.subtitle {
+    color: rgb(186, 57, 222);
+    font-family: 'Oxygen', sans-serif;
+    ;
 }
-.title{
-    color:rgb(163, 64, 255);
+
+.title {
+    color: rgb(163, 64, 255);
     font-family: 'Oxygen', sans-serif;
 }
-body{
-    background-color:rgb(214, 255, 255);
+
+body {
+    background-color: rgb(214, 255, 255);
     font-family: 'Oxygen', sans-serif;
 }
-.class{
+
+.class {
     font-size: 100px;
 }
-.username{
+
+.username {
     border-radius: 10px;
 }
-.password{
+
+.password {
     border-radius: 10px;
 }
