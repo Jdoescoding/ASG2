@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    let numbers = []
     let homepagebuttons = document.createElement("p")
     homepagebuttons.setAttribute("class", "flexboxes_home")
     document.body.append(homepagebuttons)
@@ -127,9 +128,10 @@ $(document).ready(function () {
         }
     }
     $.ajax(settings).done(function (response) {
-        for (n = 0; n, response.length; n++) {
+        for (n = 0; n < response.length; n++) {
             if (response[n].assigned_student == "") {
                 topic.append(response[n].Quiz_Topics)
+
             }
         }
     })
@@ -167,12 +169,13 @@ $(document).ready(function () {
     }
 
     $.ajax(settings).done(function (response) {
-        for (n = 0; n, response.length; n++) {
+        for (n = 0; n < response.length; n++) {
             if (response[n].assigned_student == "") {
-                let quizfound = document.createElement("p")
-                quizfound.setAttribute("id", "quiz")
+                let quizfound = document.createElement("button")
+                quizfound.setAttribute("id", "quiz" + n)
                 quizzes.append(quizfound)
-                $("#quiz").attr({ style: 'display:flex;flex-direction:column;padding:60px' })
+                quizfound.setAttribute("href", "quizchosen.html")
+                $("#quiz" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px' })
                 let desc = document.createElement("p")
                 desc.setAttribute("id", "desc")
                 desc.append(response[n].quiz_desc)
@@ -183,11 +186,54 @@ $(document).ready(function () {
                 let quiz_topic = document.createElement("p")
                 quiz_topic.append("Topic: " + response[n].Quiz_Topics)
                 quizfound.append(quiz_topic)
+                quizfound.setAttribute('quizid', response[n].quiz_id)
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics/" + response[0]._id,
+                    "method": "DELETE",
+                    "headers": {
+                        "content-type": "application/json",
+                        "x-apikey": "63d771f53bc6b255ed0c446c",
+                        "cache-control": "no-cache"
+                    }
+                }
+
+                $.ajax(settings).done(function (response) {
+                    console.log(response);
+                });
+                $("#quiz" + n).on("click", function () {
+                    var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "1", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": quizfound.getAttribute('quizid'), "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
+                    var settings = {
+                        "async": true,
+                        "crossDomain": true,
+                        "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
+                        "method": "POST",
+                        "headers": {
+                            "content-type": "application/json",
+                            "x-apikey": "63d771f53bc6b255ed0c446c",
+                            "cache-control": "no-cache"
+                        },
+                        "processData": false,
+                        "data": JSON.stringify(jsondata)
+                    }
+
+                    $.ajax(settings).done(function (response) {
+                        console.log(response);
+                    });
+                    let enter = document.createElement("a")
+                    quizfound.append(enter)
+                    enter.append("Try Quiz")
+                    enter.setAttribute("href", "tryquiz.html")
+                })
 
             }
 
         }
-    });
+
+
+
+    })
     $("#searchbutton").on("click", function () {
         var settings = {
             "async": true,
@@ -210,10 +256,11 @@ $(document).ready(function () {
                         quizzes2.setAttribute("id", "quizzes2")
                         document.body.append(quizzes2)
                         $("#quizzes2").attr({ style: 'display:flex;background-color:orange;flex-wrap:wrap' })
-                        let quizfound = document.createElement("p")
-                        quizfound.setAttribute("id", "quiz")
+                        let quizfound = document.createElement("button")
+                        quizfound.setAttribute("id", "quizsearched" + n)
                         quizzes2.append(quizfound)
-                        $("#quiz").attr({ style: 'display:flex;flex-direction:column;padding:60px' })
+                        quizfound.setAttribute("href", "quizchosen.html")
+                        $("#quizsearched" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px' })
                         let desc = document.createElement("p")
                         desc.setAttribute("id", "desc")
                         desc.append(response[n].quiz_desc)
@@ -224,12 +271,41 @@ $(document).ready(function () {
                         let quiz_topic = document.createElement("p")
                         quiz_topic.append("Topic: " + response[n].Quiz_Topics)
                         quizfound.append(quiz_topic)
-                    }
+                        quizfound.setAttribute('quizid', response[n].quiz_id)
+                        $("#quizsearched" + n).on("click", function () {
+                            var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "1", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": quizfound.getAttribute('quizid'), "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
+                            var settings = {
+                                "async": true,
+                                "crossDomain": true,
+                                "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
+                                "method": "POST",
+                                "headers": {
+                                    "content-type": "application/json",
+                                    "x-apikey": "63d771f53bc6b255ed0c446c",
+                                    "cache-control": "no-cache"
+                                },
+                                "processData": false,
+                                "data": JSON.stringify(jsondata)
+                            }
 
+                            $.ajax(settings).done(function (response) {
+                                console.log(response);
+                            });
+                            let enter = document.createElement("a")
+                            quizfound.append(enter)
+                            enter.append("Try Quiz")
+                            enter.setAttribute("href", "tryquiz.html")
+                        })
+
+                    }
                 }
             }
+
         });
 
     })
 
 })
+
+
+

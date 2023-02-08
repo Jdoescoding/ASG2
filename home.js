@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    $('#animation').hide()
-
-})
-$(document).ready(function () {
     let homepagebuttons = document.createElement("p")
     homepagebuttons.setAttribute("class", "flexboxes_home")
     document.body.append(homepagebuttons)
@@ -144,3 +140,4 @@ $(document).ready(function () {
 
     });
 })
+
