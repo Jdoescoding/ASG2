@@ -22,49 +22,14 @@ $(document).ready(function () {
     profile.setAttribute("href", "profile.html");
     profile.append("Profile");
     homepagebuttons.append(profile);
-    let homecontent = document.createElement("p")
-    homecontent.setAttribute("class", "flexbox_topstudent")
-    document.body.append(homecontent)
-    let announcements = document.createElement("p")
-    announcements.setAttribute("id", "announcements")
-    homecontent.append(announcements)
-    let titleannouncement = document.createElement("h2")
-    titleannouncement.append("Announcements")
-    announcements.append(titleannouncement)
-    let anndetails2 = document.createElement("p")
-    anndetails2.append("Welcome back. You have some undone assignments:")
-    announcements.append(anndetails2)
-    let anndetails = document.createElement("p")
-    anndetails.setAttribute("id", "anndetails")
-    announcements.append(anndetails)
-    $("#anndetails").attr({ style: 'display:flex;flex-direction:column;margin:25px;background-color:lightpink' })
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
-        "method": "GET",
-        "headers": {
-            "content-type": "application/json",
-            "x-apikey": "63d771f53bc6b255ed0c446c",
-            "cache-control": "no-cache"
-        }
-    }
-
-    $.ajax(settings).done(function (response) {
-        for (n = 0; n < response.length; n++) {
-            if (response[response.length - 1].student_login == response[n].student_username) {
-                let people_gave_assignment = document.createElement("p")
-                anndetails.append(people_gave_assignment)
-                people_gave_assignment.append(response[n].who_gave_assignment + " assigned you a quiz: ")
-                let quiz_desc = document.createElement("p")
-                anndetails.append(quiz_desc)
-                quiz_desc.append(response[n].quiz_desc)
-            }
-        }
-    })
-    let topstudent = document.createElement("p");
-    topstudent.setAttribute("id", "top_student")
-    homecontent.append(topstudent)
+    let title_box = document.createElement("p")
+    title_box.setAttribute("id", "title_box")
+    document.body.append(title_box)
+    let yourquestiontitle = document.createElement("h2")
+    yourquestiontitle.append("Start Creating Your Questions")
+    yourquestiontitle.setAttribute("id", "yourquestiontitle")
+    title_box.append(yourquestiontitle)
+    $("#yourquestiontitle").attr({ style: 'background-color:green;display:flex;flex-direction:row' })
     function screen() {
         if (a.matches) {
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
@@ -111,33 +76,7 @@ $(document).ready(function () {
     b.addListener(screen)
     c.addListener(screen)
     d.addListener(screen)
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://assignment2id-dc5f.restdb.io/rest/topstudentspoints",
-        "method": "GET",
-        "headers": {
-            "content-type": "application/json",
-            "x-apikey": "63d771f53bc6b255ed0c446c",
-            "cache-control": "no-cache"
-        }
-    }
-    let studentname = [];
-    let studentpoint = [];
-    let topstudentspoints = 0;
-    let nintopstudentslist = 0;
-    $.ajax(settings).done(function (response) {
-        for (i = 0; i < response.length; i++) {
-            if (response[i].topstudentspoints > topstudentspoints) {
-                nintopstudentslist = i;
-                studentname.push(response[i].topstudentsname)
-                studentpoint.push(response[i].topstudentspoints)
-
-            }
-        }
-        topstudent.append(studentname[1] + " is the top scoring student with " + studentpoint[1] + " points!");
+    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;background-color:yellow" })
 
 
-    });
 })
-
