@@ -709,7 +709,7 @@ $.ajax(settings).done(function (response) {
       submit.setAttribute("href", "home.html")
       questions.append(submit)
       $("#submit").on("click", function () {
-        var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": "", "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": answer1[0] + "," + answer2[0] + "," + answer3[0] + "," + answer4[0] };
+        var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "student", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": "", "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": answer1[0] + "," + answer2[0] + "," + answer3[0] + "," + answer4[0] };
         var settings = {
           "async": true,
           "crossDomain": true,
