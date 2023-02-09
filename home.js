@@ -1,4 +1,14 @@
 $(document).ready(function () {
+    $('#animation').hide()
+
+})
+$(document).ready(function () {
+    let name = document.createElement("p")
+    name.setAttribute("id", "name")
+    document.body.append(name)
+    let topname = document.createElement("h1")
+    topname.append("Welcome Back!")
+    name.append(topname)
     let homepagebuttons = document.createElement("p")
     homepagebuttons.setAttribute("class", "flexboxes_home")
     document.body.append(homepagebuttons)
@@ -67,36 +77,35 @@ $(document).ready(function () {
     homecontent.append(topstudent)
     function screen() {
         if (a.matches) {
-            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
-            $("#announcements").attr({ style: 'width:200px;height:400px;background-color:#FFFACD' })
-            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:#E0FFFF;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:20px;margin:5px;background-color:yellow;color:purple' })
-            $(".flexboxes_home").on("click", function () { style: 'color:purple' })
+            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px;border-radius:40px;' })
+            $("#announcements").attr({ style: 'width:500px;height:400px;background-color:pink;color:purple;border-radius:40px;' })
+            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:#E0FFFF;color:purple;border-radius:40px;' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:20px;margin:5px;background-color:lightblue;color:purple;border-radius:40px;' })
+            $(".flexboxes_home").on("click", function () { style: 'color:purple;' })
 
 
         }
         else if (b.matches) {
-            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
-            $("#announcements").attr({ style: 'width:200px;height:400px;background-color:#FFFACD;color:purple' })
-            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:#E0FFFF;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:30px;margin:10px;background-color:yellow;color:purple;font-size:20px' })
+            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px;' })
+            $("#announcements").attr({ style: 'width:500px;height:400px;background-color:pink;color:purple;border-radius:40px;' })
+            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:#E0FFFF;color:purple;border-radius:40px;' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:30px;margin:10px;background-color:lightblue;color:purple;font-size:20px;border-radius:40px;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
 
         }
         else if (c.matches) {
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
-            $("#announcements").attr({ style: 'width:200px;height:400px;background-color:#FFFACD;color:purple' })
-            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:#E0FFFF;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:30px;margin:10px;background-color:yellow;color:purple;font-size:20px' })
+            $("#announcements").attr({ style: 'width:500px;height:400px;background-color:pink;color:purple;border-radius:40px;' })
+            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:#E0FFFF;color:purple;border-radius:40px;' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:30px;margin:10px;background-color:lightblue;color:purple;font-size:20px;border-radius:40px;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
         }
         else if (d.matches) {
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
-            $("#announcements").attr({ style: 'width:200px;height:400px;background-color:#FFFACD;color:purple' })
-            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:#E0FFFF;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:yellow;color:purple;font-size:30px' })
+            $("#announcements").attr({ style: 'width:500px;height:400px;background-color:pink;color:purple;border-radius:40px;' })
+            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:#E0FFFF;color:purple;border-radius:40px;' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-
         }
     }
     var a = window.matchMedia("(max-width:576px)")
@@ -132,7 +141,6 @@ $(document).ready(function () {
                 nintopstudentslist = i;
                 studentname.push(response[i].topstudentsname)
                 studentpoint.push(response[i].topstudentspoints)
-
             }
         }
         topstudent.append(studentname[1] + " is the top scoring student with " + studentpoint[1] + " points!");
@@ -140,4 +148,3 @@ $(document).ready(function () {
 
     });
 })
-
