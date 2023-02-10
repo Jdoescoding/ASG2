@@ -36,19 +36,19 @@ $(document).ready(function () {
   let profilebody = document.createElement("p");
   profilebody.setAttribute("id","pfb")
   document.body.append(profilebody);
-  let name = document.createElement("h1");
+  let name = document.createElement("h2");
   name.setAttribute("class","name");
   name.append("Name: ")
   profilebody.append(name);
-  let quizmade = document.createElement("h1");
+  let quizmade = document.createElement("h2");
   quizmade.setAttribute("class","quizmade")
   quizmade.append("Number of quizzes Made: ")
   profilebody.append(quizmade);
-  let quizdone = document.createElement("h1")
+  let quizdone = document.createElement("h2")
   quizdone.setAttribute("class","quizdone")
   quizdone.append("Number of quizzes done: ");
   profilebody.append(quizdone);
-  let points = document.createElement("h1")
+  let points = document.createElement("h2")
   points.setAttribute("class","profile")
   points.append("Number of points: ");
   profilebody.append(points);
@@ -121,7 +121,7 @@ $(document).ready(function () {
   /*let settings = {
     "async": true,
     "crossDomain": true,
-    "url": "https://assignment2id-dc5f.restdb.io/rest/studentdetails",
+    "url": "https://idassignment2-80ae.restdb.io/rest/studentdetail",
     "method": "GET",
     "headers": {
       "content-type": "application/json",
@@ -130,12 +130,15 @@ $(document).ready(function () {
     }
   }
   $.ajax(settings).done(function (response) {
+
     for(i = 0; response.length > i; i++)
     {
-      let pfname= document.getElementsByClassName("name");
       if(pfname == response[i].student_username)
       {
-        
+        name.push(response[i].student_username)
+        quizmade.push(0)
+        quizdone.push(0)
+        points.push(response[i].student_points)
       }
     }
   });
