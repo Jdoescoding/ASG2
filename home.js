@@ -52,16 +52,13 @@ window.setTimeout(function () {
     }
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
-            for (a = 0; a < response.length; a++) {
-                if (response[a].student_login == response[n].assigned_student) {
-                    console.log(response[n].who_gave_assignment)
-                    let people_gave_assignment = document.createElement("p")
-                    anndetails.append(people_gave_assignment)
-                    people_gave_assignment.append(response[n].who_gave_assignment + " assigned you a quiz: ")
-                    let quiz_desc = document.createElement("p")
-                    anndetails.append(quiz_desc)
-                    quiz_desc.append(response[n].quiz_desc)
-                }
+            if (response[response.length - 1].student_login == response[n].student_username) {
+                let people_gave_assignment = document.createElement("p")
+                anndetails.append(people_gave_assignment)
+                people_gave_assignment.append(response[n].who_gave_assignment + " assigned you a quiz: ")
+                let quiz_desc = document.createElement("p")
+                anndetails.append(quiz_desc)
+                quiz_desc.append(response[n].quiz_desc)
             }
         }
     })
@@ -142,3 +139,4 @@ window.setTimeout(function () {
 
     });
 }, 400);
+

@@ -120,81 +120,72 @@ var settings = {
 let e = 0
 $.ajax(settings).done(function (response) {
   for (n = 0; n < response.length; n++) {
-    for (a = 0; a < response.length; a++) {
-      if (response[a].quiz_chosen != response[n].creator_id) {
-        if (response[a].quiz_chosen == response[n].quiz_id) {
-          let completed_quiz = response[n].quiz_id
-          let answer1 = []
-          let answer3 = []
-          let question1 = document.createElement("h3")
-          let question2 = document.createElement("h3")
-          let question3 = document.createElement("h3")
-          let question4 = document.createElement("h3")
-          question1.append(response[n].Question_1)
-          question2.append(response[n].Question_2)
-          question3.append(response[n].Question_3)
-          question4.append(response[n].Question_4)
-          question1.setAttribute("class", "questions")
-          questions.append(question1)
-          suggested_a3 = (response[n].question_3_answer).split(",")
-          suggested_a4 = (response[n].question_4_answer).split(",")
-          suggested_a1 = (response[n].question_1_answer).split(",")
-          suggested_a2 = (response[n].question_2_answer).split(",")
-          question2.setAttribute("class", "questions")
-          for (n = 1; n < 5; n++) {
-            let q1al = document.createElement("label")
-            questions.append(q1al)
-            let q1a = document.createElement("input")
-            q1a.setAttribute("type", "checkbox")
-            if (n == correctas[0]) {
-              if (n == 1) {
-                q1al.append(suggested_a1[0])
-                q1a.setAttribute("id", "q1a1")
-                q1a.setAttribute("answer", suggested_a1[0])
-              }
-              else if (n == 2) {
-                q1al.append(suggested_a1[0])
-                q1a.setAttribute("id", "q1a2")
-                q1a.setAttribute("answer", suggested_a1[0])
-              }
-              else if (n == 3) {
-                q1al.append(suggested_a1[0])
-                q1a.setAttribute("id", "q1a3")
-                q1a.setAttribute("answer", suggested_a1[0])
-              }
-              else if (n == 4) {
-                q1al.append(suggested_a1[0])
-                q1a.setAttribute("id", "q1a4")
-                q1a.setAttribute("answer", suggested_a1[0])
-              }
-            }
-            else {
-              if (n == 1) {
-                q1al.append(suggested_a1[1])
-                q1a.setAttribute("id", "q1a1")
-                q1a.setAttribute("answer", suggested_a1[1])
-              }
-              else if (n == 2) {
-                q1al.append(suggested_a1[2])
-                q1a.setAttribute("id", "q1a2")
-                q1a.setAttribute("answer", suggested_a1[2])
-              }
-              else if (n == 3) {
-                q1al.append(suggested_a1[3])
-                q1a.setAttribute("id", "q1a3")
-                q1a.setAttribute("answer", suggested_a1[3])
-              }
-              else if (n == 4) {
-                q1al.append(suggested_a1[4])
-                q1a.setAttribute("id", "q1a4")
-                q1a.setAttribute("answer", suggested_a1[4])
-              }
-
-
-
-            }
-            q1a.setAttribute("class", "q2a")
-            q1al.append(q1a)
+    if (response[0].quiz_chosen == response[n].quiz_id) {
+      console.log(response[n].quiz_id)
+      let answer1 = []
+      let answer3 = []
+      let question1 = document.createElement("h3")
+      let question2 = document.createElement("h3")
+      let question3 = document.createElement("h3")
+      let question4 = document.createElement("h3")
+      question1.append(response[n].Question_1)
+      question2.append(response[n].Question_2)
+      question3.append(response[n].Question_3)
+      question4.append(response[n].Question_4)
+      question1.setAttribute("class", "questions")
+      questions.append(question1)
+      suggested_a3 = (response[n].question_3_answer).split(",")
+      suggested_a4 = (response[n].question_4_answer).split(",")
+      suggested_a1 = (response[n].question_1_answer).split(",")
+      suggested_a2 = (response[n].question_2_answer).split(",")
+      question2.setAttribute("class", "questions")
+      for (n = 1; n < 5; n++) {
+        let q1al = document.createElement("label")
+        questions.append(q1al)
+        let q1a = document.createElement("input")
+        q1a.setAttribute("type", "checkbox")
+        if (n == correctas[0]) {
+          if (n == 1) {
+            q1al.append(suggested_a1[0])
+            q1a.setAttribute("id", "q1a1")
+            q1a.setAttribute("answer", suggested_a1[0])
+          }
+          else if (n == 2) {
+            q1al.append(suggested_a1[0])
+            q1a.setAttribute("id", "q1a2")
+            q1a.setAttribute("answer", suggested_a1[0])
+          }
+          else if (n == 3) {
+            q1al.append(suggested_a1[0])
+            q1a.setAttribute("id", "q1a3")
+            q1a.setAttribute("answer", suggested_a1[0])
+          }
+          else if (n == 4) {
+            q1al.append(suggested_a1[0])
+            q1a.setAttribute("id", "q1a4")
+            q1a.setAttribute("answer", suggested_a1[0])
+          }
+        }
+        else {
+          if (n == 1) {
+            q1al.append(suggested_a1[1])
+            q1a.setAttribute("id", "q1a1")
+            q1a.setAttribute("answer", suggested_a1[1])
+          }
+          else if (n == 2) {
+            q1al.append(suggested_a1[2])
+            q1a.setAttribute("id", "q1a2")
+            q1a.setAttribute("answer", suggested_a1[2])
+          }
+          else if (n == 3) {
+            q1al.append(suggested_a1[3])
+            q1a.setAttribute("id", "q1a3")
+            q1a.setAttribute("answer", suggested_a1[3])
+          }
+          else if (n == 4) {
+            q1al.append(suggested_a1[4])
+            q1a.setAttribute("id", "q1a4")
+            q1a.setAttribute("answer", suggested_a1[4])
           }
 
 
@@ -744,6 +735,7 @@ $.ajax(settings).done(function (response) {
 
         }
       }
+
     }
 
   }
