@@ -109,11 +109,11 @@ $("#questionsbox").attr({ style: 'display:flex;flex-direction:column' })
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
+  "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
   "method": "GET",
   "headers": {
     "content-type": "application/json",
-    "x-apikey": "63e60ecb478852088da6800a",
+    "x-apikey": "63e62546478852088da6800e",
     "cache-control": "no-cache"
   }
 }
@@ -706,11 +706,11 @@ $.ajax(settings).done(function (response) {
             var settings = {
               "async": true,
               "crossDomain": true,
-              "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
+              "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
               "method": "POST",
               "headers": {
                 "content-type": "application/json",
-                "x-apikey": "63e60ecb478852088da6800a",
+                "x-apikey": "63e62546478852088da6800e",
                 "cache-control": "no-cache"
               },
               "processData": false,
@@ -721,11 +721,11 @@ $.ajax(settings).done(function (response) {
               console.log(response);
               $("#submit").hide()
               let gobacktohome = document.createElement("a")
-              gobacktohome.setAttribute("href", "home.html")
-              gobacktohome.setAttribute("id", "gbacktoh")
-              gobacktohome.append("Return to Home")
+              gobacktohome.setAttribute("href", "score.html")
+              gobacktohome.setAttribute("id", "viewscore")
+              gobacktohome.append("View score")
               questions.append(gobacktohome)
-              $("#gbacktoh").attr({ style: 'padding:20px;font-size:25px;background-color:green' })
+              $("#viewscore").attr({ style: 'padding:20px;font-size:25px;background-color:green' })
             });
 
 
