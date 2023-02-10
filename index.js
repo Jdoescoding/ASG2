@@ -20,7 +20,6 @@ $(document).ready(function () {
           "cache-control": "no-cache"
         }
       }
-
       $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
           if (response[n].student_username == $(".un").val() && response[n].student_password == $(".pw").val()) {
@@ -45,6 +44,8 @@ $(document).ready(function () {
 
             $.ajax(settings).done(function (response) {
               console.log(response)
+              $("#submit").attr("href", "home.html")
+              $("#submit").attr({ style: 'background-color:yellow' })
             });
           }
         }
