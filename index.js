@@ -24,11 +24,10 @@ $(document).ready(function () {
       $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
           if (response[n].student_username == $(".username").val() && response[n].student_password == $(".password").val()) {
-            console.log("good")
             validornot = 1
             $("#submit").attr("href", "home.html")
             $("#submit").attr({ style: 'background-color:yellow' })
-            var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": response[n].student_username, "who_gave_assignment": "", "creator_id": "", "quiz_chosen": "", "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
+            var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": response[n].student_username, "who_gave_assignment": "", "creator_id": "1", "quiz_chosen": "", "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
             var settings = {
               "async": true,
               "crossDomain": true,

@@ -123,10 +123,6 @@ $(document).ready(function () {
             topstudentname.push(response[n].topstudentsname)
             topstudentpoint.push(response[n].topstudentspoints)
             topstudents.append(response[n].topstudentsname + " has " + response[n].topstudentspoints)
-
-            /*let topstudents = document.createElement("p")
-            topstudents.append(response[n].topstudentsname + " has " + response[n].topstudentspoints)
-            content.append(topstudents)*/
         }
         let ranking = document.createElement("h3")
         ranking.append("1st place")
