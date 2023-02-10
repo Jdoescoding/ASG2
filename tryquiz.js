@@ -121,7 +121,7 @@ let e = 0
 $.ajax(settings).done(function (response) {
   for (n = 0; n < response.length; n++) {
     for (a = 0; a < response.length; a++) {
-      if (response[a].quiz_chosen == response[n].quiz_id && response[a].creator_id != response[n].quiz_id) {
+      if (response[a].quiz_chosen == response[n].quiz_id && response[a].creator_id != response[n].quiz_id && response[n].quiz_id == "1" || response[n].quiz_id == "2") {
         completed_quiz = response[n].quiz_id
         let answer1 = []
         let answer3 = []
