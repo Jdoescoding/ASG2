@@ -203,6 +203,8 @@ $(document).ready(function () {
                     quizfound.append(enter)
                     enter.append("Try Quiz")
                     enter.setAttribute("href", "tryquiz.html")
+                    /* I wanted to add a feature where the quiz button in the assignment tab changes colour when your cursor is placed over it, and the "Try Quiz" button also changes 
+colour when the cursor is placed over it but I could not add it because i could not push my changes */
                 })
 
             }
