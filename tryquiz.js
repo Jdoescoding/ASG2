@@ -117,7 +117,6 @@ var settings = {
     "cache-control": "no-cache"
   }
 }
-let e = 0
 $.ajax(settings).done(function (response) {
   for (n = 0; n < response.length; n++) {
     for (a = 0; a < response.length; a++) {
