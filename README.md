@@ -7,6 +7,7 @@
 <h4>As a user who wants to only try quizzes of a specific topic. They can either search or select the topics in the dropdown menu.</h4>
 <h4>As a user who wants people to try their quizzes that requires teams. They can send out notifications to people about the quizzes. </h4>
 <h2>Features</h2>
+<h4>Users can do quizzes and earn points</h4>
 <h2>Technologies used</h2>
 <ol>
 <li>restdb.io</li>
@@ -23,6 +24,7 @@
 <h4>https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap</h4>
 </ol>
 <h2>Testing</h2>
+<h4>We tested it on our browser when we made the website
 <h2>References</h2>
 <h4>LottieFiles: Download Free lightweight animations for website & apps. (n.d.). https://lottiefiles.com/search?q=loading&category=animations</h4>
 <h4>HTML DOM Document createAttribute() Method. (n.d.). https://www.w3schools.com/JSREF/met_document_createattribute.asp</h4>
@@ -30,7 +32,7 @@
 <h4>Flexbox Froggy. (n.d.). A Game for Learning CSS Flexbox. https://flexboxfroggy.com/</h4>
 <h4>Free APA Citation Generator | With APA Format Guide. (2022, December 5). Scribbr. https://www.scribbr.com/citation/generator/apa/</h4>
 <h4>Adobe Marketo Engage</h4>
-<h4>https://nation.marketo.com/t5/knowledgebase/how-to-move-the-form-button-up-or-down-using-css/ta-p/249334</h4>
+<h4>Jamie-Carey. (2014, December 30). How to move the form button up or down using CSS. Marketing Nation. Retrieved February 10, 2023, from https://nation.marketo.com/t5/knowledgebase/how-to-move-the-form-button-up-or-down-using-css/ta-p/249334 </h4>
 <h4>Login page: </h4>
 <h4>https://pixabay.com/illustrations/education-online-learning-icon-5600987/</h4>
 <h4>Assignment image: </h4>
@@ -41,10 +43,17 @@
 <h4>https://www.flaticon.com/free-icon/leaderboard_3150115</h4>
 <h4>Quiz image</h4>
 <h4>https://pixabay.com/illustrations/distance-learning-computer-webcam-6831174/</h4>
-<h4>GeeksforGeeks</h4>
-<h4>https://www.geeksforgeeks.org/resize-image-proportionally-with-css/</h4>
+<h4>Resize image</h4>
+<h4>shefali163. (2022, May 10). Resize image proportionally with CSS. GeeksforGeeks. Retrieved February 10, 2023, from https://www.geeksforgeeks.org/resize-image-proportionally-with-css/ </h4>
+<h4>Background image: </h4>
+<h4>Nick. (2011, March 24). How to allow only one radio button to be checked? Stack Overflow. Retrieved February 10, 2023, from https://stackoverflow.com/a/5419508 </h4>
+<h4>Other help: </h4>
+<h4>Bhusal, O. (2021, September 18). How to create login form validation using HTML CSS &amp; javascript. LinkedIn. Retrieved February 10, 2023, from https://www.linkedin.com/pulse/how-create-login-form-validation-using-html-css-om-bhusal </h4>
+<h4>Resizing the background</h4>
+<h4>Resizing background images with background-size - CSS: Cascading style sheets: MDN. CSS: Cascading Style Sheets | MDN. (2023, January 21). Retrieved February 10, 2023, from https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images </h4>
 <h4>School replits: </h4>
-<h4></h4>
+<h4>malcomyam. (n.d.). WK07-activity-materials. replit. Retrieved February 10, 2023, from https://replit.com/@malcolmyam/wk07-activity-materials#js/focus-blur.js </h4>
+<h4>malcomyam. (n.d.). WK07-sample-username-check. replit. Retrieved February 10, 2023, from https://replit.com/@malcolmyam/wk07-sample-username-check#script.js </h4>
 <h4>How To Use Media Queries in JavaScript. (n.d.). https://www.w3schools.com/howto/howto_js_media_queries.asp</h4>
 <h4>Maier Jr., B. (n.d.). 147 Colors Grid - CSS Color Names. 147 Colors. https://147colors.com/</h4>
 <h4>W3Schools Free Online Web Tutorials. (n.d.). https://www.w3schools.com/</h4>
@@ -53,3 +62,9 @@
 <h4>JavaScript String split() Method. (n.d.). https://www.w3schools.com/jsref/jsref_split.asp</h4>
 <h4>JavaScript Timing Events. (n.d.). https://www.w3schools.com/js/js_timing.asp</h4>
 <h4>Lagutin, V. (2021, September 28). How to Publish an HTML Website on Netlify or GitHub Pages. freeCodeCamp.org. https://www.freecodecamp.org/news/publish-your-website-netlify-github/</h4>
+<h4>Github pages link:</h4>
+<h4>https://jdoescoding.github.io/ASG2/</h4>
+<h4>Assignment video: </h4>
+<h4>
+https://drive.google.com/file/d/1xwVsvxm6u0qII8j8rzSC5isbLDPwSFWR/view?usp=share_link
+</h4>
