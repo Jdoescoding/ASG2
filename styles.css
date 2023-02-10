@@ -1,27 +1,80 @@
-.subtitle {
-    color: rgb(186, 57, 222);
-    font-family: 'Oxygen', sans-serif;
-    ;
+.title{
+    color:rgb(0, 0, 0);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 20px;
 }
-
-.title {
-    color: rgb(163, 64, 255);
-    font-family: 'Oxygen', sans-serif;
+body{
+    font-family: 'Open Sans', sans-serif;
 }
-
-body {
-    background-color: rgb(214, 255, 255);
-    font-family: 'Oxygen', sans-serif;
-}
-
-.class {
+.class{
     font-size: 100px;
 }
-
-.username {
-    border-radius: 10px;
+.username{
+    color:lightblue;
+    width:500px;
+    height:30px;
+    border-width: 1px;
 }
-
-.password {
+.pw{
     border-radius: 10px;
+    color:rgb(0, 0, 0);
+    width:500px;
+    height:30px;
+    border-width:1px;
+}
+.password{
+    color:lightblue;
+    width:500px;
+    height:30px;
+    border-width: 1px;
+}
+.un{
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    width:500px;
+    height:30px;
+    border-width:1px;
+}
+.login{
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: rgb(237, 237, 30);
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-width: 1.5px;
+    height: 50px;
+    width: 80px;
+    font-size: 15px;
+}
+div.navbar{
+    text-align: center;
+    background-color: yellow;
+    color: black;
+}
+.home,.quiz,.lb,.as,.pf{
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 30px;
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+#quiz1,#quiz7{
+    background-color: lightblue;
+}
+#quiz1:hover,#quiz7:hover{
+    background-color: rgb(255, 252, 95);
+}
+#enterquiz:hover{
+    background-color: rgb(110, 198, 78);
 }
