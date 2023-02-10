@@ -110,11 +110,11 @@ $(document).ready(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://assignment2id-dc5f.restdb.io/rest/topstudentspoints",
+        "url": "https://idassignment2-80ae.restdb.io/rest/topstudentspoint",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63d771f53bc6b255ed0c446c",
+            "x-apikey": "63e5ceba478852088da67fc9",
             "cache-control": "no-cache"
         }
     }
