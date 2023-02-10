@@ -48,7 +48,8 @@ $(document).ready(function () {
     anndetails.setAttribute("id", "anndetails")
     announcements.append(anndetails)
     $("#anndetails").attr({ style: 'display:flex;flex-direction:column;margin:25px;background-color:lightpink' })
-    var settings = {
+})
+    /*var settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
@@ -147,4 +148,4 @@ $(document).ready(function () {
 
 
     });
-})
+})*/

@@ -33,6 +33,12 @@ $(document).ready(function () {
     profile.setAttribute("href", "profile.html");
     profile.append("Profile");
     homepagebuttons.append(profile);
+    let lbcontent= document.createElement("p");
+    document.body.append(lbcontent);
+    let img = document.createElement("img");
+    img.setAttribute("src","trophy.png");
+    img.setAttribute("id","image");
+    lbcontent.append(img);
     function screen() {
         if (a.matches) {
             $("#home").attr({ style: 'padding:20px ;background-color:lightblue;width:150px' })
@@ -45,6 +51,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
+            $("#image").attr({style:'width:300px;'})
         }
         else if (b.matches) {
             $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -57,6 +64,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:orange;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
+            $("#image").attr({style:'width:300px;'})
 
         }
         else if (c.matches) {
@@ -70,6 +78,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:yellow;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
+            $("#image").attr({style:'width:300px;'})
         }
         else if (d.matches) {
             $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -82,7 +91,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:green;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-
+            $("#image").attr({style:'width:300px;'})
         }
     }
     var a = window.matchMedia("(max-width:576px)")
@@ -97,7 +106,7 @@ $(document).ready(function () {
     b.addListener(screen)
     c.addListener(screen)
     d.addListener(screen)
-    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;" })
+    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;background-image:url(background.jpg);color:yellow;" })
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -117,19 +126,21 @@ $(document).ready(function () {
     content.setAttribute('id', 'content')
     document.body.append(content)
     $("#content").attr({ style: 'display:flex;flex-direction:column;align-items:center;font-size:20px;' })
-    $.ajax(settings).done(function (response) {
+    /*$.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             let topstudents = document.createElement("p")
             topstudentname.push(response[n].topstudentsname)
             topstudentpoint.push(response[n].topstudentspoints)
             topstudents.append(response[n].topstudentsname + " has " + response[n].topstudentspoints)
 
-            /*let topstudents = document.createElement("p")
+            /*topstudents = document.createElement("p")
             topstudents.append(response[n].topstudentsname + " has " + response[n].topstudentspoints)
-            content.append(topstudents)*/
+            content.append(topstudents)
         }
-        let ranking = document.createElement("h3")
-        ranking.append("1st place")
+        /*let ranking = document.createElement("h3")
+        let rankingtitle = "Here are the top three students this week!";
+        ranking.append(rankingtitle);
+        ranking.append("\n1st place")
         content.append(ranking)
         content.append(response[0].topstudentsname + " has " + response[0].topstudentspoints + " points")
         let ranking2 = document.createElement("h3")
@@ -140,7 +151,7 @@ $(document).ready(function () {
         ranking3.append("3rd place")
         content.append(ranking3)
         content.append(response[2].topstudentsname + " has " + response[2].topstudentspoints + " points")
-
+        ranking.attr({style:"position:absolute;top:-40px;"})
 
 
 
@@ -151,4 +162,5 @@ $(document).ready(function () {
 
     });
 })
-
+*/
+})
