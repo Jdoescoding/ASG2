@@ -32,3 +32,4 @@
 <h4>JS Foundation - js.foundation. (2021, November 18). How do I check/uncheck a checkbox input or radio button? | jQuery Learning Center. https://learn.jquery.com/using-jquery-core/faq/how-do-i-check-uncheck-a-checkbox-input-or-radio-button/</h4>]
 <h4>JavaScript Random. (n.d.). https://www.w3schools.com/js/js_random.asp</h4>
 <h4>JavaScript String split() Method. (n.d.). https://www.w3schools.com/jsref/jsref_split.asp</h4>
+<h4>JavaScript Timing Events. (n.d.). https://www.w3schools.com/js/js_timing.asp</h4>
