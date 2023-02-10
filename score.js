@@ -15,6 +15,8 @@ var settings = {
 }
 correctanswers = 0
 let useranswer = []
+/*find out the correct answers for those questions and match to the user's answers. Used the method split to compare. if there are correct,
+correctanswers will increase by 1.*/
 $.ajax(settings).done(function (response) {
     for (n = 0; n < response.length; n++) {
         if (response[n].creator_id != "") {
@@ -48,6 +50,7 @@ $.ajax(settings).done(function (response) {
             }
         }
     }
+    /*show points and score for the quiz. show a link to return to home page.*/
     let score = document.createElement("p")
     score.append("You have gotten " + correctanswers + " out of 4 questions correct!")
     box.append(score)

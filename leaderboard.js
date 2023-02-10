@@ -118,6 +118,7 @@ $(document).ready(function () {
             "cache-control": "no-cache"
         }
     }
+    /*show the top student points from the restdb*/
     let topstudentname = [];
     let topstudentpoint = []
     let topstudentpointcompare = 0
