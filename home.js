@@ -42,24 +42,27 @@ window.setTimeout(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
+        "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63d771f53bc6b255ed0c446c",
+            "x-apikey": "63e5ceba478852088da67fc9",
             "cache-control": "no-cache"
         }
     }
 
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
-            if (response[0].student_login == response[n].assigned_student) {
-                let people_gave_assignment = document.createElement("p")
-                anndetails.append(people_gave_assignment)
-                people_gave_assignment.append(response[n].who_gave_assignment + " assigned you a quiz: ")
-                let quiz_desc = document.createElement("p")
-                anndetails.append(quiz_desc)
-                quiz_desc.append(response[n].quiz_desc)
+            for (a = 0; a < response.length; a++) {
+                if (response[a].student_login == response[n].assigned_student) {
+                    console.log(response[n].who_gave_assignment)
+                    let people_gave_assignment = document.createElement("p")
+                    anndetails.append(people_gave_assignment)
+                    people_gave_assignment.append(response[n].who_gave_assignment + " assigned you a quiz: ")
+                    let quiz_desc = document.createElement("p")
+                    anndetails.append(quiz_desc)
+                    quiz_desc.append(response[n].quiz_desc)
+                }
             }
         }
     })
@@ -115,11 +118,11 @@ window.setTimeout(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://assignment2id-dc5f.restdb.io/rest/topstudentspoints",
+        "url": "https://idassignment2-80ae.restdb.io/rest/topstudentspoint",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63d771f53bc6b255ed0c446c",
+            "x-apikey": "63e5ceba478852088da67fc9",
             "cache-control": "no-cache"
         }
     }
