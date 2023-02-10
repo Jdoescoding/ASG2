@@ -33,5 +33,22 @@
 <h4>https://nation.marketo.com/t5/knowledgebase/how-to-move-the-form-button-up-or-down-using-css/ta-p/249334</h4>
 <h4>Login page: </h4>
 <h4>https://pixabay.com/illustrations/education-online-learning-icon-5600987/</h4>
+<h4>Assignment image: </h4>
+<h4>https://pixabay.com/illustrations/laptop-student-distance-learning-5589662/</h4>
+<h4>Page title header background</h4>
+<h4>https://pixabay.com/illustrations/education-doodle-orange-pattern-6290372/</h4>
+<h4>Leaderboard image: </h4>
+<h4>https://www.flaticon.com/free-icon/leaderboard_3150115</h4>
+<h4>Quiz image</h4>
+<h4>https://pixabay.com/illustrations/distance-learning-computer-webcam-6831174/</h4>
+<h4>GeeksforGeeks</h4>
+<h4>https://www.geeksforgeeks.org/resize-image-proportionally-with-css/</h4>
 <h4>School replits: </h4>
 <h4></h4>
+<h4>How To Use Media Queries in JavaScript. (n.d.). https://www.w3schools.com/howto/howto_js_media_queries.asp</h4>
+<h4>Maier Jr., B. (n.d.). 147 Colors Grid - CSS Color Names. 147 Colors. https://147colors.com/</h4>
+<h4>W3Schools Free Online Web Tutorials. (n.d.). https://www.w3schools.com/</h4>
+<h4>JS Foundation - js.foundation. (2021, November 18). How do I check/uncheck a checkbox input or radio button? | jQuery Learning Center. https://learn.jquery.com/using-jquery-core/faq/how-do-i-check-uncheck-a-checkbox-input-or-radio-button/</h4>]
+<h4>JavaScript Random. (n.d.). https://www.w3schools.com/js/js_random.asp</h4>
+<h4>JavaScript String split() Method. (n.d.). https://www.w3schools.com/jsref/jsref_split.asp</h4>
+<h4>JavaScript Timing Events. (n.d.). https://www.w3schools.com/js/js_timing.asp</h4>

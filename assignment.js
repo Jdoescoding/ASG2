@@ -133,27 +133,63 @@ $(document).ready(function () {
 
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
-            if (response[response.length - 1].student_login == response[n].assigned_student) {
-                let quiz = document.createElement("p")
-                if (n % 2 == 0) {
-                    quiz.setAttribute("id", "quiz")
-                }
-                else {
-                    quiz.setAttribute("id", "quiz2")
-                }
-                quizzes.append(quiz)
-                $("#quiz").attr({ style: 'display:flex;flex-direction:column;margin:25px;background-color:lightblue' })
-                $("#quiz2").attr({ style: 'display:flex;flex-direction:column;margin:25px;background-color:orange' })
+            if (response[0].student_login == response[n].assigned_student) {
+                let quizfound = document.createElement("button")
+                quizfound.setAttribute("id", "quiz" + n)
+                quizzes.append(quizfound)
+                quizfound.setAttribute("href", "quizchosen.html")
+                $("#quiz" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px' })
                 let desc = document.createElement("p")
                 desc.setAttribute("id", "desc")
                 desc.append(response[n].quiz_desc)
-                quiz.append(desc)
+                quizfound.append(desc)
                 let numberoftimesenter = document.createElement("p")
                 numberoftimesenter.append("Number of times entered: " + response[n].enterquiz)
-                quiz.append(numberoftimesenter)
+                quizfound.append(numberoftimesenter)
                 let quiz_topic = document.createElement("p")
                 quiz_topic.append("Topic: " + response[n].Quiz_Topics)
-                quiz.append(quiz_topic)
+                quizfound.append(quiz_topic)
+                quizfound.setAttribute('quizid', response[n].quiz_id)
+                var settings = {
+                    "async": true,
+                    "crossDomain": true,
+                    "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics/" + response[0]._id,
+                    "method": "DELETE",
+                    "headers": {
+                        "content-type": "application/json",
+                        "x-apikey": "63d771f53bc6b255ed0c446c",
+                        "cache-control": "no-cache"
+                    }
+                }
+
+                $.ajax(settings).done(function (response) {
+                    console.log(response);
+                });
+                $("#quiz" + n).on("click", function () {
+                    var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "1", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": quizfound.getAttribute('quizid'), "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "", "finished_quiz": "" };
+                    var settings = {
+                        "async": true,
+                        "crossDomain": true,
+                        "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
+                        "method": "POST",
+                        "headers": {
+                            "content-type": "application/json",
+                            "x-apikey": "63d771f53bc6b255ed0c446c",
+                            "cache-control": "no-cache"
+                        },
+                        "processData": false,
+                        "data": JSON.stringify(jsondata)
+                    }
+
+                    $.ajax(settings).done(function (response) {
+                        console.log(response);
+                    });
+                    let enter = document.createElement("a")
+                    quizfound.append(enter)
+                    enter.append("Try Quiz")
+                    enter.setAttribute("href", "tryquiz.html")
+                })
+
             }
 
         }
