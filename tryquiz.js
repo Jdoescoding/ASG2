@@ -117,6 +117,8 @@ var settings = {
     "cache-control": "no-cache"
   }
 }
+/*use restdb api to check for the latest quiz that the user wanted to try. and show those questions and answers for the user to select.There are 4 questions in total for each quiz.After completing,
+user clicks submit button to post the data of their answers into restdb.*/
 $.ajax(settings).done(function (response) {
   for (n = 0; n < response.length; n++) {
     for (a = 0; a < response.length; a++) {

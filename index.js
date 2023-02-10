@@ -6,6 +6,7 @@ $(document).ready(function () {
   submitbutton.setAttribute("id", "submit")
   submit.append(submitbutton)
   $("#submit").attr({ style: 'background-color:lightblue;padding:10px' })
+  /*validate the user's password and username. Submit button becomes a link to show home page.*/
   $(".un").on("click", function () {
     $(".pw").on("click", function () {
       validornot = 0

@@ -122,6 +122,7 @@ $(document).ready(function () {
     quizbody.append(img);
     let topic = document.createElement("p")
     choosetypes.append(topic)
+    /*show only quizzes that are not assigned to student's student username*/
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -158,7 +159,7 @@ $(document).ready(function () {
         }
     }
 
-
+    /*show quizzes in the form of buttons for the user to try the quiz.*/
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             if (response[n].assigned_student == "0") {
@@ -211,6 +212,7 @@ $(document).ready(function () {
 
 
     })
+    /*show the searched quizzes by the text input by user*/
     $("#searchbutton").on("click", function () {
         var settings = {
             "async": true,

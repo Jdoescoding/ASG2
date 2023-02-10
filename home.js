@@ -50,6 +50,7 @@ window.setTimeout(function () {
             "cache-control": "no-cache"
         }
     }
+    /*show the person who assigned the student the quiz under announcements*/
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             for (a = 0; a < response.length; a++) {
@@ -123,7 +124,7 @@ window.setTimeout(function () {
             "cache-control": "no-cache"
         }
     }
-
+    /*show only the top student points*/
     let studentname = [];
     let studentpoint = [];
     let topstudentspoints = 0;
