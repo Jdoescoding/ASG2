@@ -33,6 +33,16 @@ $(document).ready(function () {
     profile.setAttribute("href", "profile.html");
     profile.append("Profile");
     homepagebuttons.append(profile);
+    let acontent = document.createElement("p");
+    document.body.append(acontent);
+    let img = document.createElement("img");
+    img.setAttribute("src","quiz.png");
+    img.setAttribute("id","image");
+    acontent.append(img);
+    let tips = document.createElement("p");
+    tips.setAttribute("id","tips");
+    tips.append("Make sure to start your work as soon as you can to avoid late submission!")
+    acontent.append(tips);
     function screen() {
         if (a.matches) {
             $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -45,8 +55,8 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-
-            1
+            $("#image").attr({style:"width:300px;height:auto;position:absolute;right:900px;top:300px;"})
+            $("#tips").attr({style:"text-align:center;"})
         }
         else if (b.matches) {
             $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -59,6 +69,8 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
+            $("#image").attr({style:"width:300px;height:auto;position:absolute;right:900px;top:-40px;"})
+            $("#tips").attr({style:"text-align:center;"})
 
         }
         else if (c.matches) {
@@ -72,6 +84,8 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
+            $("#image").attr({style:"width:300px;height:auto;position:absolute;right:900px;"})
+            $("#tips").attr({style:"text-align:center;"})
         }
         else if (d.matches) {
             $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -82,8 +96,10 @@ $(document).ready(function () {
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;background-image:url(background.png)' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
+            $("#image").attr({style:"width:300px;height:auto;position:absolute;right:40px;top:390px;"})
+            $("#tips").attr({style:"text-align:center;"})
         }
     }
     var a = window.matchMedia("(max-width:576px)")
@@ -102,7 +118,7 @@ $(document).ready(function () {
     quizzes.setAttribute("id", "quizzes")
     document.body.append(quizzes)
     $("#quizzes").attr({ style: 'display:flex;flex-wrap:wrap' })
-    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;" })
+    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;background-image:url(background.jpg);font-color:yellow;" })
     var settings = {
         "async": true,
         "crossDomain": true,

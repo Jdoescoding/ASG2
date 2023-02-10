@@ -34,6 +34,24 @@ $(document).ready(function () {
   profile.append("Profile");
   homepagebuttons.append(profile);
   let profilebody = document.createElement("p");
+  profilebody.setAttribute("id","pfb")
+  document.body.append(profilebody);
+  let name = document.createElement("h1");
+  name.setAttribute("class","name");
+  name.append("Name: ")
+  profilebody.append(name);
+  let quizmade = document.createElement("h1");
+  quizmade.setAttribute("class","quizmade")
+  quizmade.append("Number of quizzes Made: ")
+  profilebody.append(quizmade);
+  let quizdone = document.createElement("h1")
+  quizdone.setAttribute("class","quizdone")
+  quizdone.append("Number of quizzes done: ");
+  profilebody.append(quizdone);
+  let points = document.createElement("h1")
+  points.setAttribute("class","profile")
+  points.append("Number of points: ");
+  profilebody.append(points);
   function screen() {
       if (a.matches) {
           $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -99,8 +117,8 @@ $(document).ready(function () {
   b.addListener(screen)
   c.addListener(screen)
   d.addListener(screen)
-  $("#pf").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;text-align:center;" })
-  let settings = {
+  $("#pf").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;text-align:center;background-image:url(background.jpg)" })
+  /*let settings = {
     "async": true,
     "crossDomain": true,
     "url": "https://assignment2id-dc5f.restdb.io/rest/studentdetails",
@@ -121,4 +139,5 @@ $(document).ready(function () {
       }
     }
   });
+})*/
 })

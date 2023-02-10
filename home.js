@@ -1,5 +1,14 @@
-window.setTimeout(function () {
-    $("#animation").hide()
+$(document).ready(function () {
+    $('#animation').hide()
+
+})
+$(document).ready(function () {
+    let name = document.createElement("p")
+    name.setAttribute("id", "name")
+    document.body.append(name)
+    let topname = document.createElement("h1")
+    topname.append("Welcome Back!")
+    name.append(topname)
     let homepagebuttons = document.createElement("p")
     homepagebuttons.setAttribute("class", "flexboxes_home")
     document.body.append(homepagebuttons)
@@ -39,7 +48,8 @@ window.setTimeout(function () {
     anndetails.setAttribute("id", "anndetails")
     announcements.append(anndetails)
     $("#anndetails").attr({ style: 'display:flex;flex-direction:column;margin:25px;background-color:lightpink' })
-    var settings = {
+})
+    /*var settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
@@ -141,6 +151,4 @@ window.setTimeout(function () {
 
 
     });
-
-}, 400);
-
+})*/

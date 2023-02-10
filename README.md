@@ -18,6 +18,9 @@
 <li>LottieFiles</li>
 <h4>The assignment uses LottieFiles for animations in our website.</h4>
 <h4>LottieFiles. (n.d.). LottieFiles: Download Free lightweight animations for website & apps. https://lottiefiles.com/</h4>
+<li>Google Fonts</li>
+<h4>I used google fonts to find fonts for this website</h4>
+<h4>https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap</h4>
 </ol>
 <h2>Testing</h2>
 <h2>References</h2>
@@ -26,6 +29,22 @@
 <h4>Hadzhiev, B. (n.d.). Set multiple Attributes on an Element using JavaScript | bobbyhadz. Blog - Bobby Hadz. https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element</h4>
 <h4>Flexbox Froggy. (n.d.). A Game for Learning CSS Flexbox. https://flexboxfroggy.com/</h4>
 <h4>Free APA Citation Generator | With APA Format Guide. (2022, December 5). Scribbr. https://www.scribbr.com/citation/generator/apa/</h4>
+<h4>Adobe Marketo Engage</h4>
+<h4>https://nation.marketo.com/t5/knowledgebase/how-to-move-the-form-button-up-or-down-using-css/ta-p/249334</h4>
+<h4>Login page: </h4>
+<h4>https://pixabay.com/illustrations/education-online-learning-icon-5600987/</h4>
+<h4>Assignment image: </h4>
+<h4>https://pixabay.com/illustrations/laptop-student-distance-learning-5589662/</h4>
+<h4>Page title header background</h4>
+<h4>https://pixabay.com/illustrations/education-doodle-orange-pattern-6290372/</h4>
+<h4>Leaderboard image: </h4>
+<h4>https://www.flaticon.com/free-icon/leaderboard_3150115</h4>
+<h4>Quiz image</h4>
+<h4>https://pixabay.com/illustrations/distance-learning-computer-webcam-6831174/</h4>
+<h4>GeeksforGeeks</h4>
+<h4>https://www.geeksforgeeks.org/resize-image-proportionally-with-css/</h4>
+<h4>School replits: </h4>
+<h4></h4>
 <h4>How To Use Media Queries in JavaScript. (n.d.). https://www.w3schools.com/howto/howto_js_media_queries.asp</h4>
 <h4>Maier Jr., B. (n.d.). 147 Colors Grid - CSS Color Names. 147 Colors. https://147colors.com/</h4>
 <h4>W3Schools Free Online Web Tutorials. (n.d.). https://www.w3schools.com/</h4>

@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    let title_box = document.createElement("p")
+    title_box.setAttribute("id", "title_box")
+    document.body.append(title_box)
+    let quizzestitle = document.createElement("h1")
+    quizzestitle.append("Quizzes")
+    title_box.append(quizzestitle)
     let homepagebuttons = document.createElement("p")
     homepagebuttons.setAttribute("class", "flexboxes_home")
     document.body.append(homepagebuttons)
@@ -27,64 +33,55 @@ $(document).ready(function () {
     profile.setAttribute("href", "profile.html");
     profile.append("Profile");
     homepagebuttons.append(profile);
-    let title_box = document.createElement("p")
-    title_box.setAttribute("id", "title_box")
-    document.body.append(title_box)
-    let quizzestitle = document.createElement("h1")
-    quizzestitle.append("Quizzes")
-    title_box.append(quizzestitle)
     function screen() {
         if (a.matches) {
-            $("#home").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
-            $("#quizbutton").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
-            $("#assignment").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
-            $("#leaderboard").attr({ style: 'padding:20px;background-color:yellow;width:150px;' })
-            $("#profile").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
+            $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#quiz").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#leaderboard").attr({ style: 'padding:20px;background-color:lightblue;width:150px;' })
+            $("#profile").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;font-size:20px' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-
-            1
         }
         else if (b.matches) {
-            $("#home").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
-            $("#quizbutton").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
-            $("#assignment").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
-            $("#leaderboard").attr({ style: 'padding:20px;background-color:yellow;width:150px;' })
-            $("#profile").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
+            $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#quiz").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#leaderboard").attr({ style: 'padding:20px;background-color:lightblue;width:150px;' })
+            $("#profile").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:orange;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;font-size:20px' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-
+  
         }
         else if (c.matches) {
-            $("#home").attr({ style: 'padding:20px;background-color:yellow;width:180px' })
-            $("#quizbutton").attr({ style: 'padding:20px;background-color:lightblue;width:180px' })
-            $("#assignment").attr({ style: 'padding:20px;background-color:yellow;width:180px' })
-            $("#leaderboard").attr({ style: 'padding:20px;background-color:yellow;width:180px;' })
-            $("#profile").attr({ style: 'padding:20px;background-color:yellow;width:180px' })
+            $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#quiz").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#leaderboard").attr({ style: 'padding:20px;background-color:lightblue;width:150px;' })
+            $("#profile").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:yellow;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;font-size:20px' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
         }
         else if (d.matches) {
-            $("#home").attr({ style: 'padding:30px;background-color:yellow;width:250px' })
-            $("#quizbutton").attr({ style: 'padding:30px;background-color:lightblue;width:250px' })
-            $("#assignment").attr({ style: 'padding:30px;background-color:yellow;width:250px' })
-            $("#leaderboard").attr({ style: 'padding:30px;background-color:yellow;width:250px;' })
-            $("#profile").attr({ style: 'padding:30px;background-color:yellow;width:250px' })
+            $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#quiz").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#leaderboard").attr({ style: 'padding:20px;background-color:lightblue;width:150px;width:auto;' })
+            $("#profile").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:green;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;font-size:20px' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-
         }
     }
     var a = window.matchMedia("(max-width:576px)")
@@ -99,18 +96,30 @@ $(document).ready(function () {
     b.addListener(screen)
     c.addListener(screen)
     d.addListener(screen)
-    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;background-color:yellow" })
+    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;background-image:url(background.jpg)" })
     let choosetypes = document.createElement("p")
     choosetypes.setAttribute("id", "choosetypes")
     document.body.append(choosetypes)
     $("#choosetypes").attr({ style: 'display:flex;flex-direction:row;align-items:center' })
+    let tips = document.createElement("p");
+    document.body.append(tips);
+    let top = document.createElement("p");
+    top.append("Take part in quizzes to have fun and improve your learning!")
+    tips.append(top);
     let topictitle = document.createElement("p")
-    topictitle.append("topics found: ")
+    topictitle.append("Topics found: ")
     choosetypes.append(topictitle)
     topictitle.setAttribute("id", "topics")
     $("#topics").attr({ style: 'padding:15px;margin:10px' })
-    let topic = document.createElement("p")
-    topic.setAttribute("id", "topicfound")
+    let quizbody = document.createElement("p");
+    document.body.append(quizbody);
+    quizbody.setAttribute("id","quizbody");
+    let img = document.createElement("img");
+    img.setAttribute("src","online learning.png");
+    img.setAttribute("id","image");
+    img.setAttribute("width","400px")
+    img.setAttribute("height","auto")
+    quizbody.append(img);
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -126,31 +135,15 @@ $(document).ready(function () {
         for (n = 0; n < response.length; n++) {
             if (response[n].assigned_student == "0") {
                 topic.append(response[n].Quiz_Topics)
-
             }
         }
     })
     choosetypes.append(topic)
-    $("#topicfound").attr({ style: 'background-color:orange;margin:25px' })
-    let searchtopictitle = document.createElement("p")
-    searchtopictitle.append("Search topic: ")
-    choosetypes.append(searchtopictitle)
-    let search = document.createElement("form")
-    choosetypes.append(search)
-    let input = document.createElement("input")
-    input.setAttribute("type", "text")
-    input.setAttribute("id", "input")
-    search.append(input)
-    $("#input").attr({ style: 'padding:20px' })
-    let searchbutton = document.createElement("button")
-    searchbutton.append("Search")
-    searchbutton.setAttribute("id", "searchbutton")
-    choosetypes.append(searchbutton)
+    $("#topicfound").attr({ style: 'background-color:orange' })
     let quizzes = document.createElement("p")
     quizzes.setAttribute("id", "quizzes")
     document.body.append(quizzes)
-    $("#quizzes").attr({ style: 'display:flex;background-color:orange;flex-wrap:wrap' })
-    $("#searchbutton").attr({ style: 'background-color:lightblue;padding:20px' })
+    $("#quizzes").attr({ style: 'display:flex;flex-direction:column;background-color:orange;flex-wrap:wrap' })
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -162,7 +155,6 @@ $(document).ready(function () {
             "cache-control": "no-cache"
         }
     }
-
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             if (response[n].assigned_student == "0") {
@@ -174,10 +166,10 @@ $(document).ready(function () {
                 let desc = document.createElement("p")
                 desc.setAttribute("id", "desc")
                 desc.append(response[n].quiz_desc)
-                quizfound.append(desc)
+                quiz.append(desc)
                 let numberoftimesenter = document.createElement("p")
                 numberoftimesenter.append("Number of times entered: " + response[n].enterquiz)
-                quizfound.append(numberoftimesenter)
+                quiz.append(numberoftimesenter)
                 let quiz_topic = document.createElement("p")
                 quiz_topic.append("Topic: " + response[n].Quiz_Topics)
                 quizfound.append(quiz_topic)
@@ -286,6 +278,3 @@ $(document).ready(function () {
     })
 
 })
-
-
-

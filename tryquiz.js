@@ -696,7 +696,6 @@ $.ajax(settings).done(function (response) {
               alert("There should only be one answer for question 4")
               $("#q4a4").prop("checked", false)
             }
-
             if ($("#q4a4").prop("checked") == true) {
               console.log("hi")
               answer4.push($("#q4a4").attr("answer"))
@@ -745,6 +744,7 @@ $.ajax(settings).done(function (response) {
 
         }
       }
+
     }
 
   }
