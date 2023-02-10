@@ -20,7 +20,6 @@ $.ajax(settings).done(function (response) {
         if (response[n].creator_id != "") {
             for (a = 0; a < response.length; a++) {
                 if (response[n].creator_id == response[a].quiz_id) {
-                    console.log(useranswer)
                     useranswer = (response[n].user_answer).split(",")
                     correctanswer1 = (response[a].question_1_answer).split(",")
                     correctanswer2 = (response[a].question_2_answer).split(",")
@@ -70,7 +69,6 @@ $.ajax(settings).done(function (response) {
                     response2[a].student_points = response2[a].student_points + 10 * correctanswers
                     let points = document.createElement("p")
                     points.append("You now have " + response2[a].student_points + " points")
-                    box.append(points)
                     var jsondata = { "student_username": response2[a].student_username, "student_password": response2[a].student_password, "student_points": response2[a].student_points };
                     var settings = {
                         "async": true,
@@ -86,17 +84,21 @@ $.ajax(settings).done(function (response) {
                         "data": JSON.stringify(jsondata)
                     }
                     $.ajax(settings).done(function (response) {
-                        console.log(response);
-                        let gobacktohome = document.createElement("a")
-                        gobacktohome.append("Return to Home")
-                        gobacktohome.setAttribute('href', "home.html")
-                        box.append(gobacktohome)
+
                     });
+                    box.append(points)
+                    let gobacktohome = document.createElement("a")
+                    gobacktohome.append("Return to Home")
+                    gobacktohome.setAttribute('href', "home.html")
+                    box.append(gobacktohome)
+
                 }
+
 
             }
         }
-    })
+    }
+    )
 
 
 
