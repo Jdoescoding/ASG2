@@ -6,6 +6,15 @@
 <h4>As a user who wants to create quizzes only for a specific group of people, under "Who can see", they can enter the teamid in the settings for the quizzes. </h4>
 <h4>As a user who wants to only try quizzes of a specific topic. They can either search or select the topics in the dropdown menu.</h4>
 <h4>As a user who wants people to try their quizzes that requires teams. They can send out notifications to people about the quizzes. </h4>
+<h2>Wireframes</h2>
+<h4>Part 1:</h4>
+<h4>https://xd.adobe.com/view/bb82eb2b-24e1-4ed6-842b-494ca5482f36-eed1/</h4>
+<h4>Part 2: </h4>
+<h4>https://xd.adobe.com/view/c0171255-d00b-4ff7-966d-297047491f8e-9544/</h4>
+<h4>Part 3: </h4>
+<h4>https://xd.adobe.com/view/958663c0-7ac8-434e-a2a6-e1566706e627-c0d5/</h4>
+<h4>Part 4: </h4>
+<h4>https://xd.adobe.com/view/57999b5a-ce8e-4c96-b74b-21927f6ee488-02ca/</h4>
 <h2>Features</h2>
 <h4>Users can do quizzes and earn points</h4>
 <h2>Technologies used</h2>
