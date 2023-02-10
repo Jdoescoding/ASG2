@@ -125,14 +125,15 @@ $(document).ready(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
+        "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e60ecb478852088da6800a",
+            "x-apikey": "63e62546478852088da6800e",
             "cache-control": "no-cache"
         }
     }
+
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             if (response[n].assigned_student == "0") {
@@ -148,14 +149,15 @@ $(document).ready(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
+        "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e60ecb478852088da6800a",
+            "x-apikey": "63e62546478852088da6800e",
             "cache-control": "no-cache"
         }
     }
+
 
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
@@ -182,11 +184,11 @@ $(document).ready(function () {
                     var settings = {
                         "async": true,
                         "crossDomain": true,
-                        "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
+                        "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
                         "method": "POST",
                         "headers": {
                             "content-type": "application/json",
-                            "x-apikey": "63e60ecb478852088da6800a",
+                            "x-apikey": "63e62546478852088da6800e",
                             "cache-control": "no-cache"
                         },
                         "processData": false,
@@ -212,15 +214,14 @@ $(document).ready(function () {
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
+            "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
             "method": "GET",
             "headers": {
                 "content-type": "application/json",
-                "x-apikey": "63e60ecb478852088da6800a",
+                "x-apikey": "63e62546478852088da6800e	",
                 "cache-control": "no-cache"
             }
         }
-
 
         $.ajax(settings).done(function (response) {
             for (n = 0; n < response.length; n++) {
@@ -253,11 +254,11 @@ $(document).ready(function () {
                             var settings = {
                                 "async": true,
                                 "crossDomain": true,
-                                "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
+                                "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
                                 "method": "POST",
                                 "headers": {
                                     "content-type": "application/json",
-                                    "x-apikey": "63e60ecb478852088da6800a",
+                                    "x-apikey": "63e62546478852088da6800e",
                                     "cache-control": "no-cache"
                                 },
                                 "processData": false,

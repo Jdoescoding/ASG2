@@ -42,15 +42,14 @@ window.setTimeout(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
+        "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e60ecb478852088da6800a",
+            "x-apikey": "63e62546478852088da6800e",
             "cache-control": "no-cache"
         }
     }
-
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             for (a = 0; a < response.length; a++) {
@@ -117,14 +116,15 @@ window.setTimeout(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-4cad.restdb.io/rest/topstudentspoint",
+        "url": "https://idassignment2final-af39.restdb.io/rest/topstudentspoint",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e60ecb478852088da6800a",
+            "x-apikey": "63e62546478852088da6800e",
             "cache-control": "no-cache"
         }
     }
+
     let studentname = [];
     let studentpoint = [];
     let topstudentspoints = 0;

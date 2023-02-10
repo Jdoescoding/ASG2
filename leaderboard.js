@@ -110,11 +110,11 @@ $(document).ready(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-4cad.restdb.io/rest/topstudentspoint",
+        "url": "https://idassignment2final-af39.restdb.io/rest/topstudentspoint",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e60ecb478852088da6800a",
+            "x-apikey": "63e62546478852088da6800e",
             "cache-control": "no-cache"
         }
     }
@@ -126,18 +126,8 @@ $(document).ready(function () {
     content.setAttribute('id', 'content')
     document.body.append(content)
     $("#content").attr({ style: 'display:flex;flex-direction:column;align-items:center;font-size:20px;' })
-    /*$.ajax(settings).done(function (response) {
-        for (n = 0; n < response.length; n++) {
-            let topstudents = document.createElement("p")
-            topstudentname.push(response[n].topstudentsname)
-            topstudentpoint.push(response[n].topstudentspoints)
-            topstudents.append(response[n].topstudentsname + " has " + response[n].topstudentspoints)
-
-            /*topstudents = document.createElement("p")
-            topstudents.append(response[n].topstudentsname + " has " + response[n].topstudentspoints)
-            content.append(topstudents)
-        }
-        /*let ranking = document.createElement("h3")
+    $.ajax(settings).done(function (response) {
+        let ranking = document.createElement("h3")
         let rankingtitle = "Here are the top three students this week!";
         ranking.append(rankingtitle);
         ranking.append("\n1st place")
@@ -151,7 +141,7 @@ $(document).ready(function () {
         ranking3.append("3rd place")
         content.append(ranking3)
         content.append(response[2].topstudentsname + " has " + response[2].topstudentspoints + " points")
-        ranking.attr({style:"position:absolute;top:-40px;"})
+        ranking.attr({ style: "position:absolute;top:-40px;" })
 
 
 
@@ -162,5 +152,5 @@ $(document).ready(function () {
 
     });
 })
-*/
-})
+
+
