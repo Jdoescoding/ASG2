@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    let title_box = document.createElement("p")
+    title_box.setAttribute("id", "title_box")
+    document.body.append(title_box)
+    let assignmenttitle = document.createElement("h1")
+    assignmenttitle.append("Assignments")
+    title_box.append(assignmenttitle)
     let homepagebuttons = document.createElement("p")
     homepagebuttons.setAttribute("class", "flexboxes_home")
     document.body.append(homepagebuttons)
@@ -27,64 +33,57 @@ $(document).ready(function () {
     profile.setAttribute("href", "profile.html");
     profile.append("Profile");
     homepagebuttons.append(profile);
-    let title_box = document.createElement("p")
-    title_box.setAttribute("id", "title_box")
-    document.body.append(title_box)
-    let assignmenttitle = document.createElement("h1")
-    assignmenttitle.append("Assignments")
-    title_box.append(assignmenttitle)
     function screen() {
         if (a.matches) {
-            $("#home").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
-            $("#quizbutton").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
+            $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#quiz").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
             $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
-            $("#leaderboard").attr({ style: 'padding:20px;background-color:yellow;width:150px;' })
-            $("#profile").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
+            $("#leaderboard").attr({ style: 'padding:20px;background-color:lightblue;width:150px;' })
+            $("#profile").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
             $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;font-size:20px' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
 
             1
         }
         else if (b.matches) {
-            $("#home").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
-            $("#quizbutton").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
+            $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#quiz").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
             $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
-            $("#leaderboard").attr({ style: 'padding:20px;background-color:yellow;width:150px;' })
-            $("#profile").attr({ style: 'padding:20px;background-color:yellow;width:150px' })
-            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
+            $("#leaderboard").attr({ style: 'padding:20px;background-color:lightblue;width:150px;' })
+            $("#profile").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
-            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:orange;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;font-size:20px' })
+            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
 
         }
         else if (c.matches) {
-            $("#home").attr({ style: 'padding:20px;background-color:yellow;width:180px' })
-            $("#quizbutton").attr({ style: 'padding:20px;background-color:yellow;width:180px' })
-            $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:180px' })
-            $("#leaderboard").attr({ style: 'padding:20px;background-color:yellow;width:180px;' })
-            $("#profile").attr({ style: 'padding:20px;background-color:yellow;width:180px' })
-            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
+            $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#quiz").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#leaderboard").attr({ style: 'padding:20px;background-color:lightblue;width:150px;' })
+            $("#profile").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
-            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:yellow;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;font-size:20px' })
+            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
         }
         else if (d.matches) {
-            $("#home").attr({ style: 'padding:30px;background-color:yellow;width:250px' })
-            $("#quizbutton").attr({ style: 'padding:30px;background-color:yellow;width:250px' })
-            $("#assignment").attr({ style: 'padding:30px;background-color:lightblue;width:250px' })
-            $("#leaderboard").attr({ style: 'padding:30px;background-color:yellow;width:250px;' })
-            $("#profile").attr({ style: 'padding:30px;background-color:yellow;width:250px' })
-            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;justify-content:space-between;padding:20px;margin:5px' })
+            $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#quiz").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#assignment").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $("#leaderboard").attr({ style: 'padding:20px;background-color:lightblue;width:150px;' })
+            $("#profile").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
+            $(".flexbox_topstudent").attr({ style: 'display:flex;flex-direction:row;padding:20px;margin:5px' })
             $("#announcements").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
-            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:green;color:purple' })
-            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;font-size:20px' })
+            $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
+            $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-
         }
     }
     var a = window.matchMedia("(max-width:576px)")
@@ -103,7 +102,7 @@ $(document).ready(function () {
     quizzes.setAttribute("id", "quizzes")
     document.body.append(quizzes)
     $("#quizzes").attr({ style: 'display:flex;flex-wrap:wrap' })
-    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;background-color:yellow" })
+    $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;" })
     var settings = {
         "async": true,
         "crossDomain": true,
