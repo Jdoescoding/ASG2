@@ -109,11 +109,11 @@ $("#questionsbox").attr({ style: 'display:flex;flex-direction:column' })
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
+  "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
   "method": "GET",
   "headers": {
     "content-type": "application/json",
-    "x-apikey": "63e5ceba478852088da67fc9",
+    "x-apikey": "63e60ecb478852088da6800a",
     "cache-control": "no-cache"
   }
 }
@@ -715,11 +715,11 @@ $.ajax(settings).done(function (response) {
             var settings = {
               "async": true,
               "crossDomain": true,
-              "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
+              "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
               "method": "POST",
               "headers": {
                 "content-type": "application/json",
-                "x-apikey": "63e5ceba478852088da67fc9",
+                "x-apikey": "63e60ecb478852088da6800a",
                 "cache-control": "no-cache"
               },
               "processData": false,
@@ -744,9 +744,10 @@ $.ajax(settings).done(function (response) {
 
         }
       }
-
     }
 
   }
+
 }
+
 );

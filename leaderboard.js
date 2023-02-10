@@ -33,11 +33,11 @@ $(document).ready(function () {
     profile.setAttribute("href", "profile.html");
     profile.append("Profile");
     homepagebuttons.append(profile);
-    let lbcontent= document.createElement("p");
+    let lbcontent = document.createElement("p");
     document.body.append(lbcontent);
     let img = document.createElement("img");
-    img.setAttribute("src","trophy.png");
-    img.setAttribute("id","image");
+    img.setAttribute("src", "trophy.png");
+    img.setAttribute("id", "image");
     lbcontent.append(img);
     function screen() {
         if (a.matches) {
@@ -51,7 +51,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:red;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-            $("#image").attr({style:'width:300px;'})
+            $("#image").attr({ style: 'width:300px;' })
         }
         else if (b.matches) {
             $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -64,7 +64,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:orange;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-            $("#image").attr({style:'width:300px;'})
+            $("#image").attr({ style: 'width:300px;' })
 
         }
         else if (c.matches) {
@@ -78,7 +78,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:yellow;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-            $("#image").attr({style:'width:300px;'})
+            $("#image").attr({ style: 'width:300px;' })
         }
         else if (d.matches) {
             $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -91,7 +91,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:green;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-            $("#image").attr({style:'width:300px;'})
+            $("#image").attr({ style: 'width:300px;' })
         }
     }
     var a = window.matchMedia("(max-width:576px)")
@@ -110,11 +110,11 @@ $(document).ready(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-80ae.restdb.io/rest/topstudentspoint",
+        "url": "https://idassignment2-4cad.restdb.io/rest/topstudentspoint",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e5ceba478852088da67fc9",
+            "x-apikey": "63e60ecb478852088da6800a",
             "cache-control": "no-cache"
         }
     }

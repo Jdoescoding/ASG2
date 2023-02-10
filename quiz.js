@@ -57,7 +57,7 @@ $(document).ready(function () {
             $("#top_student").attr({ style: 'width:200px;height:400px;background-color:orange;color:purple' })
             $(".flexboxes_home").attr({ style: 'display:flex;flex-direction:row;align-items:center;justify-content:space-between;padding:45px;margin:30px;background-color:lightblue;color:purple;font-size:30px;border-radius:40px;width:auto;' })
             $(".flexboxes_home").on("click", function () { style: 'color:purple' })
-  
+
         }
         else if (c.matches) {
             $("#home").attr({ style: 'padding:20px;background-color:lightblue;width:150px' })
@@ -113,21 +113,23 @@ $(document).ready(function () {
     $("#topics").attr({ style: 'padding:15px;margin:10px' })
     let quizbody = document.createElement("p");
     document.body.append(quizbody);
-    quizbody.setAttribute("id","quizbody");
+    quizbody.setAttribute("id", "quizbody");
     let img = document.createElement("img");
-    img.setAttribute("src","online learning.png");
-    img.setAttribute("id","image");
-    img.setAttribute("width","400px")
-    img.setAttribute("height","auto")
+    img.setAttribute("src", "online learning.png");
+    img.setAttribute("id", "image");
+    img.setAttribute("width", "400px")
+    img.setAttribute("height", "auto")
     quizbody.append(img);
+    let topic = document.createElement("p")
+    choosetypes.append(topic)
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
+        "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e5ceba478852088da67fc9",
+            "x-apikey": "63e60ecb478852088da6800a",
             "cache-control": "no-cache"
         }
     }
@@ -138,7 +140,6 @@ $(document).ready(function () {
             }
         }
     })
-    choosetypes.append(topic)
     $("#topicfound").attr({ style: 'background-color:orange' })
     let quizzes = document.createElement("p")
     quizzes.setAttribute("id", "quizzes")
@@ -147,14 +148,15 @@ $(document).ready(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
+        "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e5ceba478852088da67fc9",
+            "x-apikey": "63e60ecb478852088da6800a",
             "cache-control": "no-cache"
         }
     }
+
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             if (response[n].assigned_student == "0") {
@@ -166,30 +168,30 @@ $(document).ready(function () {
                 let desc = document.createElement("p")
                 desc.setAttribute("id", "desc")
                 desc.append(response[n].quiz_desc)
-                quiz.append(desc)
+                quizfound.append(desc)
                 let numberoftimesenter = document.createElement("p")
                 numberoftimesenter.append("Number of times entered: " + response[n].enterquiz)
-                quiz.append(numberoftimesenter)
+                quizfound.append(numberoftimesenter)
                 let quiz_topic = document.createElement("p")
                 quiz_topic.append("Topic: " + response[n].Quiz_Topics)
                 quizfound.append(quiz_topic)
                 quizfound.setAttribute('quizid', response[n].quiz_id)
+                console.log(response[n].quiz_id)
                 $("#quiz" + n).on("click", function () {
                     var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "2", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "student", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": quizfound.getAttribute('quizid'), "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
                     var settings = {
                         "async": true,
                         "crossDomain": true,
-                        "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
+                        "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
                         "method": "POST",
                         "headers": {
                             "content-type": "application/json",
-                            "x-apikey": "63e5ceba478852088da67fc9",
+                            "x-apikey": "63e60ecb478852088da6800a",
                             "cache-control": "no-cache"
                         },
                         "processData": false,
                         "data": JSON.stringify(jsondata)
                     }
-
                     $.ajax(settings).done(function (response) {
                         console.log(response);
                     });
@@ -210,14 +212,15 @@ $(document).ready(function () {
         var settings = {
             "async": true,
             "crossDomain": true,
-            "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
+            "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
             "method": "GET",
             "headers": {
                 "content-type": "application/json",
-                "x-apikey": "63e5ceba478852088da67fc9",
+                "x-apikey": "63e60ecb478852088da6800a",
                 "cache-control": "no-cache"
             }
         }
+
 
         $.ajax(settings).done(function (response) {
             for (n = 0; n < response.length; n++) {
@@ -250,16 +253,17 @@ $(document).ready(function () {
                             var settings = {
                                 "async": true,
                                 "crossDomain": true,
-                                "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
+                                "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
                                 "method": "POST",
                                 "headers": {
                                     "content-type": "application/json",
-                                    "x-apikey": "63e5ceba478852088da67fc9",
+                                    "x-apikey": "63e60ecb478852088da6800a",
                                     "cache-control": "no-cache"
                                 },
                                 "processData": false,
                                 "data": JSON.stringify(jsondata)
                             }
+
 
                             $.ajax(settings).done(function (response) {
                                 console.log(response);
