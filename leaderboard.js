@@ -107,14 +107,14 @@ $(document).ready(function () {
     c.addListener(screen)
     d.addListener(screen)
     $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;background-image:url(background.jpg);color:yellow;" })
-    var settings = {
+    /*var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://assignment2id-dc5f.restdb.io/rest/topstudentspoints",
+        "url": "https://idassignment2-80ae.restdb.io/rest/topstudentspoint",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63d771f53bc6b255ed0c446c",
+            "x-apikey": "63e60674478852088da67ffc",
             "cache-control": "no-cache"
         }
     }
@@ -126,18 +126,18 @@ $(document).ready(function () {
     content.setAttribute('id', 'content')
     document.body.append(content)
     $("#content").attr({ style: 'display:flex;flex-direction:column;align-items:center;font-size:20px;' })
-    /*$.ajax(settings).done(function (response) {
+    $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             let topstudents = document.createElement("p")
             topstudentname.push(response[n].topstudentsname)
             topstudentpoint.push(response[n].topstudentspoints)
             topstudents.append(response[n].topstudentsname + " has " + response[n].topstudentspoints)
 
-            /*topstudents = document.createElement("p")
+            topstudents = document.createElement("p")
             topstudents.append(response[n].topstudentsname + " has " + response[n].topstudentspoints)
             content.append(topstudents)
         }
-        /*let ranking = document.createElement("h3")
+        let ranking = document.createElement("h3")
         let rankingtitle = "Here are the top three students this week!";
         ranking.append(rankingtitle);
         ranking.append("\n1st place")
@@ -161,6 +161,5 @@ $(document).ready(function () {
 
 
     });
-})
-*/
+})*/
 })

@@ -120,7 +120,7 @@ $(document).ready(function () {
     img.setAttribute("width","400px")
     img.setAttribute("height","auto")
     quizbody.append(img);
-    var settings = {
+    /*var settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
@@ -309,4 +309,5 @@ $(document).ready(function () {
 
     })
 
+})*/
 })

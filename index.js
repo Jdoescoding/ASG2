@@ -12,11 +12,11 @@ $(document).ready(function () {
       var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://assignment2id-dc5f.restdb.io/rest/loginstudent",
+        "url": "https://idassignment2-80ae.restdb.io/rest/loginstudents",
         "method": "GET",
         "headers": {
           "content-type": "application/json",
-          "x-apikey": "63d771f53bc6b255ed0c446c",
+          "x-apikey": "63e5ceba478852088da67fc9",
           "cache-control": "no-cache"
         }
       }
@@ -28,15 +28,15 @@ $(document).ready(function () {
             validornot = 1
             $("#submit").attr("href", "home.html")
             $("#submit").attr({ style: 'background-color:yellow' })
-            var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": response[n].student_username, "who_gave_assignment": "", "creator_id": "", "quiz_chosen": "", "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
+            var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": response[n].student_username, "who_gave_assignment": "", "creator_id": "1", "quiz_chosen": "", "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
             var settings = {
               "async": true,
               "crossDomain": true,
-              "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
+              "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
               "method": "POST",
               "headers": {
                 "content-type": "application/json",
-                "x-apikey": "63d771f53bc6b255ed0c446c",
+                "x-apikey": "63e5ceba478852088da67fc9",
                 "cache-control": "no-cache"
               },
               "processData": false,
@@ -50,7 +50,7 @@ $(document).ready(function () {
         }
 
         if (validornot == 0) {
-          alert("Wrong password or username. Please try again. Thank you.")
+          $(".message").append("Wrong password. Please try again. ")
         }
       });
 

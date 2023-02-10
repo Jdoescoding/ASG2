@@ -1,8 +1,6 @@
-$(document).ready(function () {
+window.setTimeout(function () {
+    $(document).ready(function () {
     $('#animation').hide()
-
-})
-$(document).ready(function () {
     let name = document.createElement("p")
     name.setAttribute("id", "name")
     document.body.append(name)
@@ -63,7 +61,7 @@ $(document).ready(function () {
 
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
-            if (response[response.length - 1].student_login == response[n].student_username) {
+            if (response[0].student_login == response[n].assigned_student) {
                 let people_gave_assignment = document.createElement("p")
                 anndetails.append(people_gave_assignment)
                 people_gave_assignment.append(response[n].who_gave_assignment + " assigned you a quiz: ")
@@ -148,4 +146,6 @@ $(document).ready(function () {
 
 
     });
-})*/
+
+}, 400);*/
+})

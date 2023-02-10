@@ -109,17 +109,18 @@ $("#questionsbox").attr({ style: 'display:flex;flex-direction:column' })
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
+  "url": "",
   "method": "GET",
   "headers": {
     "content-type": "application/json",
-    "x-apikey": "63d771f53bc6b255ed0c446c",
+    "x-apikey": "",
     "cache-control": "no-cache"
   }
 }
 $.ajax(settings).done(function (response) {
   for (n = 0; n < response.length; n++) {
     if (response[0].quiz_chosen == response[n].quiz_id) {
+      console.log(response[n].quiz_id)
       let answer1 = []
       let answer3 = []
       let question1 = document.createElement("h3")
@@ -703,21 +704,20 @@ $.ajax(settings).done(function (response) {
 
       }
       )
-      let submit = document.createElement("a")
+      let submit = document.createElement("button")
       submit.append("submit")
       submit.setAttribute("id", "submit")
-      submit.setAttribute("href", "home.html")
       questions.append(submit)
       $("#submit").on("click", function () {
-        var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": "", "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": answer1[0] + "," + answer2[0] + "," + answer3[0] + "," + answer4[0] };
+        var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "1", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "1", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": "", "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": answer1[0] + "," + answer2[0] + "," + answer3[0] + "," + answer4[0] };
         var settings = {
           "async": true,
           "crossDomain": true,
-          "url": "https://assignment2id-dc5f.restdb.io/rest/quiztopics",
+          "url": "",
           "method": "POST",
           "headers": {
             "content-type": "application/json",
-            "x-apikey": "63d771f53bc6b255ed0c446c",
+            "x-apikey": "",
             "cache-control": "no-cache"
           },
           "processData": false,
@@ -726,6 +726,13 @@ $.ajax(settings).done(function (response) {
 
         $.ajax(settings).done(function (response) {
           console.log(response);
+          let gobacktohome = document.createElement("a")
+          gobacktohome.setAttribute("id", "gobacktoh")
+          gobacktohome.append("Go back to home page")
+          questions.append(gobacktohome)
+          $("#gobacktoh").attr("href", "home.html")
+
+
         });
 
 
