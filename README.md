@@ -52,3 +52,4 @@
 <h4>JavaScript Random. (n.d.). https://www.w3schools.com/js/js_random.asp</h4>
 <h4>JavaScript String split() Method. (n.d.). https://www.w3schools.com/jsref/jsref_split.asp</h4>
 <h4>JavaScript Timing Events. (n.d.). https://www.w3schools.com/js/js_timing.asp</h4>
+<h4>Lagutin, V. (2021, September 28). How to Publish an HTML Website on Netlify or GitHub Pages. freeCodeCamp.org. https://www.freecodecamp.org/news/publish-your-website-netlify-github/</h4>
