@@ -119,7 +119,7 @@ $(document).ready(function () {
     document.body.append(quizzes)
     $("#quizzes").attr({ style: 'display:flex;flex-wrap:wrap' })
     $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;background-image:url(background.jpg);font-color:yellow;" })
-    var settings = {
+    /*var settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
@@ -182,4 +182,5 @@ $(document).ready(function () {
 
     });
 
+})*/
 })
