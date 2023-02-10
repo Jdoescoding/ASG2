@@ -119,7 +119,7 @@ $(document).ready(function () {
     document.body.append(quizzes)
     $("#quizzes").attr({ style: 'display:flex;flex-wrap:wrap' })
     $("#title_box").attr({ style: "display:flex;flex-direction:row;justify-content:center;padding:20px;background-image:url(background.jpg);font-color:yellow;" })
-    /*var settings = {
+    var settings = {
         "async": true,
         "crossDomain": true,
         "url": "https://idassignment2final-af39.restdb.io/rest/quiztopic",
@@ -138,7 +138,7 @@ $(document).ready(function () {
                     quizfound.setAttribute("id", "quiz" + n)
                     quizzes.append(quizfound)
                     quizfound.setAttribute("href", "quizchosen.html")
-                    $("#quiz" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px;color:yellow' })
+                    $("#quiz" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px;background-color:yellow' })
                     let desc = document.createElement("p")
                     desc.setAttribute("id", "desc")
                     desc.append(response[n].quiz_desc)
@@ -181,5 +181,5 @@ $(document).ready(function () {
 
     });
 
-})*/
 })
+

@@ -162,11 +162,12 @@ $(document).ready(function () {
     $.ajax(settings).done(function (response) {
         for (n = 0; n < response.length; n++) {
             if (response[n].assigned_student == "0") {
+                completed_quiz = response[n].quiz_id
                 let quizfound = document.createElement("button")
                 quizfound.setAttribute("id", "quiz" + n)
                 quizzes.append(quizfound)
                 quizfound.setAttribute("href", "quizchosen.html")
-                $("#quiz" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px' })
+                $("#quiz" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px;background-color:yellow' })
                 let desc = document.createElement("p")
                 desc.setAttribute("id", "desc")
                 desc.append(response[n].quiz_desc)
@@ -180,7 +181,7 @@ $(document).ready(function () {
                 quizfound.setAttribute('quizid', response[n].quiz_id)
                 console.log(response[n].quiz_id)
                 $("#quiz" + n).on("click", function () {
-                    var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "2", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "student", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": quizfound.getAttribute('quizid'), "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
+                    var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "2", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "student", "who_gave_assignment": "", "creator_id": completed_quiz, "quiz_chosen": quizfound.getAttribute('quizid'), "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
                     var settings = {
                         "async": true,
                         "crossDomain": true,
@@ -227,6 +228,7 @@ $(document).ready(function () {
             for (n = 0; n < response.length; n++) {
                 if ((response[n].Quiz_Topics)[0] == $("#input").val()[0] && response[n].Quiz_Topics[1] == $("#input").val()[1]) {
                     if (response[n].assigned_student == "0") {
+                        completed_quiz = response[n].quiz_id
                         $("#quizzes").hide()
                         console.log(response[n].quiz_id)
                         let quizzes2 = document.createElement("p")
@@ -237,7 +239,7 @@ $(document).ready(function () {
                         quizfound.setAttribute("id", "quizsearched" + n)
                         quizzes2.append(quizfound)
                         quizfound.setAttribute("href", "quizchosen.html")
-                        $("#quizsearched" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px' })
+                        $("#quizsearched" + n).attr({ style: 'display:flex;flex-direction:column;padding:60px;background-color:yellow' })
                         let desc = document.createElement("p")
                         desc.setAttribute("id", "desc")
                         desc.append(response[n].quiz_desc)
@@ -250,7 +252,7 @@ $(document).ready(function () {
                         quizfound.append(quiz_topic)
                         quizfound.setAttribute('quizid', response[n].quiz_id)
                         $("#quizsearched" + n).on("click", function () {
-                            var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "2", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "student", "who_gave_assignment": "", "creator_id": "", "quiz_chosen": quizfound.getAttribute('quizid'), "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
+                            var jsondata = { "Quiz_Topics": "1", "Question_1": "1", "assigned_student": "2", "Question_2": "", "question_1_answer": "", "question_2_answer": "", "quiz_desc": "", "enterquiz": 0, "student_login": "student", "who_gave_assignment": "", "creator_id": completed_quiz, "quiz_chosen": quizfound.getAttribute('quizid'), "quiz_id": "", "Question_3": "", "question_3_answer": "", "Question_4": "", "question_4_answer": "", "user_answer": "" };
                             var settings = {
                                 "async": true,
                                 "crossDomain": true,
@@ -282,5 +284,5 @@ $(document).ready(function () {
 
     })
 
-})*/
 })
+
