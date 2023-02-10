@@ -78,3 +78,5 @@ a{
 #enterquiz:hover{
     background-color: rgb(110, 198, 78);
 }
+/* I wanted to add a feature where the quiz button in the assignment tab changes colour when your cursor is placed over it, and the "Try Quiz" button also changes 
+colour when the cursor is placed over it but I could not add it because i could not push my changes */
