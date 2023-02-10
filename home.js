@@ -1,12 +1,5 @@
 window.setTimeout(function () {
-    $(document).ready(function () {
-    $('#animation').hide()
-    let name = document.createElement("p")
-    name.setAttribute("id", "name")
-    document.body.append(name)
-    let topname = document.createElement("h1")
-    topname.append("Welcome Back!")
-    name.append(topname)
+    $("#animation").hide()
     let homepagebuttons = document.createElement("p")
     homepagebuttons.setAttribute("class", "flexboxes_home")
     document.body.append(homepagebuttons)
@@ -46,15 +39,14 @@ window.setTimeout(function () {
     anndetails.setAttribute("id", "anndetails")
     announcements.append(anndetails)
     $("#anndetails").attr({ style: 'display:flex;flex-direction:column;margin:25px;background-color:lightpink' })
-})
-    /*var settings = {
+    var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-80ae.restdb.io/rest/quiztopic",
+        "url": "https://idassignment2-4cad.restdb.io/rest/quiztopic",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e5ceba478852088da67fc9",
+            "x-apikey": "63e60ecb478852088da6800a",
             "cache-control": "no-cache"
         }
     }
@@ -122,11 +114,11 @@ window.setTimeout(function () {
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://idassignment2-80ae.restdb.io/rest/topstudentspoint",
+        "url": "https://idassignment2-4cad.restdb.io/rest/topstudentspoint",
         "method": "GET",
         "headers": {
             "content-type": "application/json",
-            "x-apikey": "63e5ceba478852088da67fc9",
+            "x-apikey": "63e60ecb478852088da6800a",
             "cache-control": "no-cache"
         }
     }
@@ -146,6 +138,5 @@ window.setTimeout(function () {
 
 
     });
+}, 400);
 
-}, 400);*/
-})
