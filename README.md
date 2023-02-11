@@ -35,6 +35,10 @@
 <h2>Testing</h2>
 <h4>We tested it on our browser when we made the website
 <h2>References</h2>
+<h4>Ideas from Kahoot!, a quiz website.</h4>
+<h4>Ideas from THE STRAITS TIMES website. </h4>
+<h4>Ideas from THE STRAITS TIMES quizzes.  </h4>
+<h4>Ideas from Blooket. </h4>
 <h4>LottieFiles: Download Free lightweight animations for website & apps. (n.d.). https://lottiefiles.com/search?q=loading&category=animations</h4>
 <h4>HTML DOM Document createAttribute() Method. (n.d.). https://www.w3schools.com/JSREF/met_document_createattribute.asp</h4>
 <h4>Hadzhiev, B. (n.d.). Set multiple Attributes on an Element using JavaScript | bobbyhadz. Blog - Bobby Hadz. https://bobbyhadz.com/blog/javascript-set-multiple-attributes-to-element</h4>
